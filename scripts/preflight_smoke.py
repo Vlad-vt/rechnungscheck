@@ -146,8 +146,14 @@ def main() -> None:
     s = Smoke(args.endpoint)
     png = synthetic_invoice_png()
     img_part = [
-        {"type": "text", "text": "Read this invoice image. Reply with JSON: invoice_number, total_eur, line_count."},
-        {"type": "image_url", "image_url": {"url": "data:image/png;base64," + base64.b64encode(png).decode()}},
+        {
+            "type": "text",
+            "text": "Read this invoice image. Reply with JSON: invoice_number, total_eur, line_count.",
+        },
+        {
+            "type": "image_url",
+            "image_url": {"url": "data:image/png;base64," + base64.b64encode(png).decode()},
+        },
     ]
     text_q = "Reply with one word: what is the German word for 'invoice'?"
     results = {

@@ -1,0 +1,56 @@
+# Synthetic demo tenant: electronics retailer. All names and addresses are fictitious.
+schema_version: 1
+tenant_id: technikhaus
+display_name: Technikhaus (synthetic)
+business: Electronics retailer buying serialised devices from German and international distributors.
+language: de
+correspondence_languages: [de, en]
+currency: EUR
+
+# Initial tiers from the Phase 0 smoke test (both accept image input).
+models:
+  tiers:
+    small: {deployment: small, model: gpt-5.4-mini, vision: true}
+    strong: {deployment: strong, model: gpt-5.5, vision: true, fallback: small}
+  roles:
+    extractor: strong
+    compliance_explainer: small
+    line_matcher: small
+    investigator: strong
+    resolution_planner: strong
+    correspondence_writer: small
+    fact_check_wording: small
+    baseline_agent: strong
+  embedding: {deployment: embed, model: text-embedding-3-large}
+
+mandatory_fields:
+  - order_reference
+  - lines[].seller_item_id
+  - lines[].gtin
+  - lines[].serial_numbers
+
+# Zero quantity and price tolerance; only cent rounding on totals.
+tolerances:
+  quantity: {relative: 0, absolute: 0}
+  unit_price: {relative: 0, absolute: 0}
+  rounding_eur: 0.01
+
+actions:
+  - approve
+  - short_pay
+  - request_credit_note
+  - reject_compliance
+  - hold_for_goods_receipt
+  - escalate
+
+auto_approval:
+  clean_invoices: true
+  within_tolerance: false
+  max_invoice_gross_eur: 10000
+
+reviewers:
+  - {reviewer_id: ap.lead, display_name: Accounts Payable Lead, email: ap-lead@technikhaus.example}
+
+budget:
+  daily_token_limit: 1000000
+  daily_cost_limit_eur: 1.00

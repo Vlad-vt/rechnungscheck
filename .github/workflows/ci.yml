@@ -1,0 +1,88 @@
+name: ci
+
+# Runs on every PR and on main. No cloud access: no Azure login, no secrets.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  UV_LOCKED: "1"
+  GITLEAKS_VERSION: "8.30.1"
+  GITLEAKS_SHA256: "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb"
+  CHECKOV_VERSION: "3.4.6"
+  PIP_AUDIT_VERSION: "2.10.1"
+
+jobs:
+  python:
+    name: lint, types, tests, tenants
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
+        with:
+          enable-cache: true
+      - name: Install locked dependencies
+        run: uv sync --locked
+      - name: Ruff lint
+        run: uv run ruff check . --output-format github
+      - name: Ruff format
+        run: uv run ruff format --check .
+      - name: mypy (strict)
+        run: uv run mypy
+      - name: Unit tests
+        run: uv run pytest -m "not integration and not cloud"
+      - name: Validate tenant configs
+        run: uv run rechnungscheck tenants validate
+
+  infra:
+    name: bicep lint, IaC scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
+      - name: Bicep lint (all files, including never-deployed preflight probes)
+        run: |
+          az bicep install
+          git ls-files '*.bicep' | while read -r f; do
+            echo "::group::$f"
+            az bicep lint --file "$f"
+            echo "::endgroup::"
+          done
+      - name: checkov (deployable Bicep only; infra/bicep/preflight is never deployed)
+        run: uvx --from "checkov==${CHECKOV_VERSION}" checkov -d infra/bicep --framework bicep --skip-path preflight --compact --quiet
+
+  security:
+    name: secrets, dependency audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
+      - name: gitleaks (MIT CLI, checksum-verified)
+        run: |
+          curl -sSfL -o gitleaks.tgz "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          echo "${GITLEAKS_SHA256}  gitleaks.tgz" | sha256sum -c -
+          tar -xzf gitleaks.tgz gitleaks
+          ./gitleaks git . --no-banner --redact
+      - name: pip-audit (locked dependency set, all groups)
+        run: |
+          uv export --format requirements-txt --all-groups --no-emit-project --quiet -o "${RUNNER_TEMP}/req.txt"
+          uvx --from "pip-audit==${PIP_AUDIT_VERSION}" pip-audit -r "${RUNNER_TEMP}/req.txt" --disable-pip --progress-spinner off

@@ -53,6 +53,7 @@ resource budget 'Microsoft.Consumption/budgets@2023-11-01' = {
         operator: 'GreaterThan'
         threshold: 80
         thresholdType: 'Actual'
+        contactEmails: []
         contactRoles: [
           'Owner'
         ]

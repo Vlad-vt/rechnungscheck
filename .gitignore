@@ -1,6 +1,29 @@
+# secrets and local config
 .env
 .env.*
-*.tfstate*
-.terraform/
+!.env.example
+*.pem
+*.pfx
+
+# python
 .venv/
 __pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# infra
+*.tfstate*
+.terraform/
+infra/bicep/**/*.json
+!infra/bicep/**/bicepconfig.json
+
+# local artefacts
+evals/results/local/
+*.log

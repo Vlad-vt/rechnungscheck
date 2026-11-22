@@ -1,0 +1,66 @@
+# Synthetic demo tenant: grocery chain. All names and addresses are fictitious.
+schema_version: 1
+tenant_id: frischemarkt
+display_name: Frischemarkt (synthetic)
+business: German grocery chain buying fresh and packaged food from regional suppliers.
+language: de
+correspondence_languages: [de]
+currency: EUR
+
+# Initial tiers from the Phase 0 smoke test (both accept image input).
+# Final choice is made by the Phase 4 evals; see docs/PREFLIGHT.md.
+models:
+  tiers:
+    small: {deployment: small, model: gpt-5.4-mini, vision: true}
+    strong: {deployment: strong, model: gpt-5.5, vision: true, fallback: small}
+  roles:
+    extractor: strong
+    compliance_explainer: small
+    line_matcher: small
+    investigator: strong
+    resolution_planner: strong
+    correspondence_writer: small
+    fact_check_wording: small
+    baseline_agent: strong
+  embedding: {deployment: embed, model: text-embedding-3-large}
+
+mandatory_fields:
+  - buyer_reference
+  - order_reference
+  - lines[].gtin
+  - lines[].batch_number
+  - lines[].best_before_date
+
+tolerances:
+  quantity: {relative: 0, absolute: 0}
+  quantity_by_unit:
+    KGM: {relative: 0.02}   # weighed goods: +/- 2 %
+  unit_price: {absolute: 0.01}
+  rounding_eur: 0.02
+
+shelf_life:
+  min_remaining_days: 0     # an expired batch is a discrepancy
+
+actions:
+  - approve
+  - approve_within_tolerance
+  - short_pay
+  - request_credit_note
+  - reject_compliance
+  - hold_for_goods_receipt
+  - escalate
+
+auto_approval:
+  clean_invoices: true
+  within_tolerance: true
+  max_invoice_gross_eur: 5000
+  max_total_deviation_eur: 25
+
+reviewers:
+  - {reviewer_id: ap.lead, display_name: Kreditorenbuchhaltung Leitung, email: ap-lead@frischemarkt.example}
+  - {reviewer_id: ap.clerk, display_name: Kreditorenbuchhaltung, email: ap@frischemarkt.example}
+
+# Initial limits; revisited once Phase 4 has measured cost per invoice.
+budget:
+  daily_token_limit: 1000000
+  daily_cost_limit_eur: 1.00
