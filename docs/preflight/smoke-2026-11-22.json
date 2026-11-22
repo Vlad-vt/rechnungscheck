@@ -1,0 +1,163 @@
+{
+  "small_text": {
+    "status": 200,
+    "seconds": 2.68,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "answer": "Rechnung",
+    "usage": {
+      "completion_tokens": 21,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 10,
+        "rejected_prediction_tokens": 0
+      },
+      "latency_checkpoint": {
+        "engine_tbt_ms": 3,
+        "engine_ttft_ms": 40,
+        "engine_ttlt_ms": 101,
+        "pre_inference_ms": 68,
+        "service_tbt_ms": 3,
+        "service_ttft_ms": 362,
+        "service_ttlt_ms": 418,
+        "user_visible_ttft_ms": 294
+      },
+      "prompt_tokens": 20,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 41
+    }
+  },
+  "strong_text": {
+    "status": 200,
+    "seconds": 1.54,
+    "model": "gpt-5.5-2026-04-24",
+    "answer": "Rechnung",
+    "usage": {
+      "completion_tokens": 5,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "latency_checkpoint": {
+        "engine_tbt_ms": 13,
+        "engine_ttft_ms": 233,
+        "engine_ttlt_ms": 311,
+        "pre_inference_ms": 95,
+        "service_tbt_ms": 13,
+        "service_ttft_ms": 377,
+        "service_ttlt_ms": 444,
+        "user_visible_ttft_ms": 282
+      },
+      "prompt_tokens": 20,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 25
+    }
+  },
+  "small_image": {
+    "status": 200,
+    "seconds": 2.24,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "answer": "{\"invoice_number\":\"RC-2026-0042\",\"total_eur\":20.71,\"line_count\":2}",
+    "usage": {
+      "completion_tokens": 60,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 26,
+        "rejected_prediction_tokens": 0
+      },
+      "latency_checkpoint": {
+        "engine_tbt_ms": 3,
+        "engine_ttft_ms": 206,
+        "engine_ttlt_ms": 398,
+        "pre_inference_ms": 87,
+        "service_tbt_ms": 3,
+        "service_ttft_ms": 1015,
+        "service_ttlt_ms": 1202,
+        "user_visible_ttft_ms": 928
+      },
+      "prompt_tokens": 507,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 567
+    }
+  },
+  "strong_image": {
+    "status": 200,
+    "seconds": 1.6,
+    "model": "gpt-5.5-2026-04-24",
+    "answer": "{\"invoice_number\":\"RC-2026-0042\",\"total_eur\":20.71,\"line_count\":2}",
+    "usage": {
+      "completion_tokens": 28,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "latency_checkpoint": {
+        "engine_tbt_ms": 5,
+        "engine_ttft_ms": 237,
+        "engine_ttlt_ms": 375,
+        "pre_inference_ms": 101,
+        "service_tbt_ms": 4,
+        "service_ttft_ms": 524,
+        "service_ttlt_ms": 641,
+        "user_visible_ttft_ms": 423
+      },
+      "prompt_tokens": 513,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 541
+    }
+  },
+  "embed": {
+    "status": 200,
+    "seconds": 0.87,
+    "dims": 3072,
+    "usage": {
+      "prompt_tokens": 9,
+      "total_tokens": 9
+    }
+  },
+  "doc_intel_prebuilt_invoice": {
+    "status": 202,
+    "seconds": 3.42,
+    "op_status": "succeeded",
+    "fields": {
+      "VendorName": "Muster Lieferant GmbH",
+      "InvoiceId": "RC-2026-0042",
+      "InvoiceDate": "15.11.2026",
+      "InvoiceTotal": "20,71 EUR",
+      "SubTotal": "17,40 EUR",
+      "TotalTax": "3,31 EUR"
+    },
+    "line_items": 2
+  },
+  "prompt_shields": {
+    "status": 200,
+    "seconds": 0.88,
+    "result": {
+      "userPromptAnalysis": {
+        "attackDetected": false
+      },
+      "documentsAnalysis": [
+        {
+          "attackDetected": true
+        }
+      ]
+    }
+  }
+}
