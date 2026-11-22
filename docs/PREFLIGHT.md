@@ -17,7 +17,7 @@ Templates live in [`infra/bicep/preflight/`](../infra/bicep/preflight/) and the 
   - Document Intelligence prebuilt-invoice;
   - Prompt Shields.
 - **Primary region: `germanywestcentral`.**
-- **One substitution decision is needed.** PostgreSQL Flexible Server provisioning is **restricted for this subscription in `germanywestcentral`**. It is available in the other four allowed regions. See [Postgres region](#postgres-region-decision-needed).
+- **Postgres runs in a second region.** PostgreSQL Flexible Server provisioning is **restricted for this subscription in `germanywestcentral`**, so Postgres goes to `belgiumcentral` (EU). Everything else stays in `germanywestcentral`. See [ADR 0001](adr/0001-region-split-postgres-belgiumcentral.md).
 - **AI Search Free tier is available:** 0 of 1 used.
 - **Credit:** USD 100 Azure for Students credit, unused before the smoke test, expires 2027-10-02. Spending limit is on.
 
@@ -81,7 +81,9 @@ All providers the brief needs are now **Registered**: App, CognitiveServices, Co
 
 `validate` does catch the policy deny on location. Everything else here rests on capability or quota APIs, or on a real deployment.
 
-### Postgres region (decision needed)
+### Postgres region
+
+**Decided 2026-11-22:** Postgres goes to `belgiumcentral`, everything else stays in `germanywestcentral`. See [ADR 0001](adr/0001-region-split-postgres-belgiumcentral.md).
 
 `az postgres flexible-server list-skus`:
 
@@ -175,7 +177,7 @@ Monthly figures and the full idle-cost estimate come in Phase 5 from the Bicep p
 
 ## Mode
 
-**Mode A.** Nothing is substituted except the Postgres region, which is pending the decision above. Brief items that bill while idle need approval in Phase 5:
+**Mode A.** Nothing is substituted. The only deviation from the brief's single-region layout is Postgres in `belgiumcentral` (ADR 0001). Brief items that bill while idle need approval in Phase 5:
 
 - **Postgres Flexible Server:** compute bills while running, storage also while stopped, and the server restarts automatically after 7 days. `make stop` limits the idle cost but does not remove it. Whether the student offer includes free B1ms hours has to be checked, not assumed.
 - **ACR Basic:** bills daily. The alternative is GHCR with public images.
@@ -183,7 +185,6 @@ Monthly figures and the full idle-cost estimate come in Phase 5 from the Bicep p
 ## Open
 
 - Project budget ceiling (asked).
-- Postgres region (asked).
 
 ## Reproduce
 
