@@ -182,9 +182,20 @@ Monthly figures and the full idle-cost estimate come in Phase 5 from the Bicep p
 - **Postgres Flexible Server:** compute bills while running, storage also while stopped, and the server restarts automatically after 7 days. `make stop` limits the idle cost but does not remove it. Whether the student offer includes free B1ms hours has to be checked, not assumed.
 - **ACR Basic:** bills daily. The alternative is GHCR with public images.
 
+## Budget ceiling
+
+**Decided 2026-11-22: USD 10 per month** for the whole project. That spreads the USD 100 credit over about ten months.
+
+Consequences for later phases (list prices above; final numbers in Phase 5):
+
+- **Postgres B1ms cannot run around the clock.** At list price that alone would exceed the budget, so it runs only during work sessions and demos. `make stop` / `make start` become part of the normal workflow, and the 7-day automatic restart of a stopped server needs a guard: a scheduled stop, or an alert.
+- **ACR Basic** would take about half of the monthly budget just by existing. Phase 5 has to justify it against GHCR, or the brief's ACR requirement is replaced.
+- **Evals against real models** run under an explicit per-run spend cap. The nightly `evals.yml` schedule is sized so that it fits the budget.
+- A project budget (resource-group scope, alerts at 50/80/100% actual and 100% forecast) is part of the Phase 5 Bicep. The existing subscription budget `monthly-10usd` stays as the outer guard.
+
 ## Open
 
-- Project budget ceiling (asked).
+Nothing. Phase 0 is complete.
 
 ## Reproduce
 
