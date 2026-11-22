@@ -1,0 +1,97 @@
+[
+  {
+    "supplier_id": "SUP-0001",
+    "name": "Blütenhain Kosmetik GmbH",
+    "vat_id": "DE990121701",
+    "address": {
+      "street": "Rosengarten 21",
+      "post_code": "64283",
+      "city": "Darmstadt",
+      "country_code": "DE"
+    },
+    "iban": "DE71995665575866635498",
+    "bic": "ZXEWDEXX",
+    "contact_name": "Lea Hartwig",
+    "contact_phone": "+49 543 2659489",
+    "contact_email": "lea@blutenhain-kosmetik.example",
+    "electronic_address": "rechnung@blutenhain-kosmetik.example",
+    "language": "de",
+    "payment_terms_days": 30
+  },
+  {
+    "supplier_id": "SUP-0002",
+    "name": "Sanavita Pharma Vertrieb GmbH",
+    "vat_id": "DE991662918",
+    "address": {
+      "street": "Apothekergasse 5",
+      "post_code": "69117",
+      "city": "Heidelberg",
+      "country_code": "DE"
+    },
+    "iban": "DE53991614170800819295",
+    "bic": "EHAJDEXX",
+    "contact_name": "Jonas Wirth",
+    "contact_phone": "+49 603 3171120",
+    "contact_email": "jonas@sanavita-pharma-vertrieb.example",
+    "electronic_address": "rechnung@sanavita-pharma-vertrieb.example",
+    "language": "de",
+    "payment_terms_days": 30
+  },
+  {
+    "supplier_id": "SUP-0003",
+    "name": "Klarquell Haushaltswaren GmbH",
+    "vat_id": "DE991238066",
+    "address": {
+      "street": "Seifenweg 18",
+      "post_code": "42103",
+      "city": "Wuppertal",
+      "country_code": "DE"
+    },
+    "iban": "DE38991532854881860787",
+    "bic": "YOXRDEXX",
+    "contact_name": "Nina Pohl",
+    "contact_phone": "+49 714 4092530",
+    "contact_email": "nina@klarquell-haushaltswaren.example",
+    "electronic_address": "rechnung@klarquell-haushaltswaren.example",
+    "language": "de",
+    "payment_terms_days": 45
+  },
+  {
+    "supplier_id": "SUP-0004",
+    "name": "Mildwerk Naturpflege GmbH",
+    "vat_id": "DE996010365",
+    "address": {
+      "street": "Kräuterhof 3",
+      "post_code": "87435",
+      "city": "Kempten",
+      "country_code": "DE"
+    },
+    "iban": "DE32999424826693594155",
+    "bic": "DAEIDEXX",
+    "contact_name": "Anton Huber",
+    "contact_phone": "+49 522 5783718",
+    "contact_email": "anton@mildwerk-naturpflege.example",
+    "electronic_address": "rechnung@mildwerk-naturpflege.example",
+    "language": "de",
+    "payment_terms_days": 30
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "name": "Kranichfeld Handelskontor GmbH",
+    "vat_id": "DE994115134",
+    "address": {
+      "street": "Speicherweg 7",
+      "post_code": "28195",
+      "city": "Bremen",
+      "country_code": "DE"
+    },
+    "iban": "DE57994953179865374247",
+    "bic": "KDXCDEXX",
+    "contact_name": "Jana Oltmanns",
+    "contact_phone": "+49 113 5217016",
+    "contact_email": "jana@kranichfeld-handelskontor.example",
+    "electronic_address": "rechnung@kranichfeld-handelskontor.example",
+    "language": "de",
+    "payment_terms_days": 30
+  }
+]

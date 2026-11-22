@@ -1,0 +1,240 @@
+[
+  {
+    "supplier_id": "SUP-0004",
+    "invoice_number": "RE-04-202500019",
+    "issue_date": "2026-03-15",
+    "total_with_vat": "4179.54",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0002",
+    "invoice_number": "RE-02-202500016",
+    "issue_date": "2026-03-23",
+    "total_with_vat": "3540.80",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0003",
+    "invoice_number": "RE-03-202500024",
+    "issue_date": "2026-03-23",
+    "total_with_vat": "554.32",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0003",
+    "invoice_number": "RE-03-202500025",
+    "issue_date": "2026-03-29",
+    "total_with_vat": "3893.11",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0003",
+    "invoice_number": "RE-03-202500020",
+    "issue_date": "2026-03-31",
+    "total_with_vat": "4842.78",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0003",
+    "invoice_number": "RE-03-202500005",
+    "issue_date": "2026-04-04",
+    "total_with_vat": "1109.11",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "invoice_number": "RE-05-202500029",
+    "issue_date": "2026-04-06",
+    "total_with_vat": "1492.04",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0006",
+    "invoice_number": "RE-06-202500007",
+    "issue_date": "2026-04-06",
+    "total_with_vat": "2307.64",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "invoice_number": "RE-05-202500008",
+    "issue_date": "2026-04-15",
+    "total_with_vat": "4083.90",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "invoice_number": "RE-05-202500000",
+    "issue_date": "2026-04-18",
+    "total_with_vat": "1414.65",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0006",
+    "invoice_number": "RE-06-202500002",
+    "issue_date": "2026-04-25",
+    "total_with_vat": "4935.37",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0002",
+    "invoice_number": "RE-02-202500027",
+    "issue_date": "2026-05-01",
+    "total_with_vat": "2619.75",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0006",
+    "invoice_number": "RE-06-202500009",
+    "issue_date": "2026-05-02",
+    "total_with_vat": "4567.22",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0004",
+    "invoice_number": "RE-04-202500003",
+    "issue_date": "2026-05-08",
+    "total_with_vat": "3588.54",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "invoice_number": "RE-05-202500013",
+    "issue_date": "2026-05-11",
+    "total_with_vat": "4612.81",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0004",
+    "invoice_number": "RE-04-202500023",
+    "issue_date": "2026-05-20",
+    "total_with_vat": "2945.70",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0006",
+    "invoice_number": "RE-06-202500026",
+    "issue_date": "2026-06-13",
+    "total_with_vat": "2340.85",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "invoice_number": "RE-05-202500022",
+    "issue_date": "2026-06-14",
+    "total_with_vat": "2642.39",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0001",
+    "invoice_number": "RE-01-202500014",
+    "issue_date": "2026-06-18",
+    "total_with_vat": "3039.03",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "invoice_number": "RE-05-202500012",
+    "issue_date": "2026-06-24",
+    "total_with_vat": "410.05",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0002",
+    "invoice_number": "RE-02-202500006",
+    "issue_date": "2026-06-27",
+    "total_with_vat": "2019.16",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0002",
+    "invoice_number": "RE-02-202500004",
+    "issue_date": "2026-06-28",
+    "total_with_vat": "4160.60",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "invoice_number": "RE-05-202500018",
+    "issue_date": "2026-06-28",
+    "total_with_vat": "4205.39",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0003",
+    "invoice_number": "RE-03-202500015",
+    "issue_date": "2026-07-13",
+    "total_with_vat": "58.04",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0002",
+    "invoice_number": "RE-02-202500021",
+    "issue_date": "2026-07-24",
+    "total_with_vat": "4911.18",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0004",
+    "invoice_number": "RE-04-202500017",
+    "issue_date": "2026-08-01",
+    "total_with_vat": "1410.52",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0004",
+    "invoice_number": "RE-04-202500011",
+    "issue_date": "2026-08-02",
+    "total_with_vat": "2843.94",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0001",
+    "invoice_number": "RE-01-202500010",
+    "issue_date": "2026-08-13",
+    "total_with_vat": "4335.48",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0001",
+    "invoice_number": "RE-01-202500001",
+    "issue_date": "2026-08-16",
+    "total_with_vat": "312.87",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0003",
+    "invoice_number": "RE-03-202500028",
+    "issue_date": "2026-09-06",
+    "total_with_vat": "894.47",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0004",
+    "invoice_number": "RE-04-202600050",
+    "issue_date": "2026-10-18",
+    "total_with_vat": "338.58",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0001",
+    "invoice_number": "RE-01-202600052",
+    "issue_date": "2026-10-24",
+    "total_with_vat": "219.37",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0001",
+    "invoice_number": "RE-01-202600049",
+    "issue_date": "2026-11-05",
+    "total_with_vat": "116.33",
+    "status": "paid"
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "invoice_number": "RE-05-202600051",
+    "issue_date": "2026-11-11",
+    "total_with_vat": "29.81",
+    "status": "paid"
+  }
+]

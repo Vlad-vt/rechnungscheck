@@ -1,0 +1,178 @@
+[
+  {
+    "product_id": "ART-10007",
+    "gtin": "2791928018120",
+    "name": "Äpfel Elstar lose",
+    "category": "Obst",
+    "unit_code": "KGM",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 30
+  },
+  {
+    "product_id": "ART-10014",
+    "gtin": "2011195478244",
+    "name": "Bananen Fairtrade lose",
+    "category": "Obst",
+    "unit_code": "KGM",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 10
+  },
+  {
+    "product_id": "ART-10021",
+    "gtin": "2718794839109",
+    "name": "Tomaten Rispen lose",
+    "category": "Gemüse",
+    "unit_code": "KGM",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 12
+  },
+  {
+    "product_id": "ART-10028",
+    "gtin": "2540589493483",
+    "name": "Gouda jung am Stück",
+    "category": "Käse",
+    "unit_code": "KGM",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 60
+  },
+  {
+    "product_id": "ART-10035",
+    "gtin": "2163783034711",
+    "name": "Vollmilch 3,5 % 1 l",
+    "category": "Molkerei",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 12
+  },
+  {
+    "product_id": "ART-10042",
+    "gtin": "2726860371729",
+    "name": "Naturjoghurt 500 g",
+    "category": "Molkerei",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 25
+  },
+  {
+    "product_id": "ART-10049",
+    "gtin": "2013673416953",
+    "name": "Süßrahmbutter 250 g",
+    "category": "Molkerei",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 60
+  },
+  {
+    "product_id": "ART-10056",
+    "gtin": "2684162925074",
+    "name": "Mineralwasser still 12 x 1 l",
+    "category": "Getränke",
+    "unit_code": "XCT",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 365
+  },
+  {
+    "product_id": "ART-10063",
+    "gtin": "2913306777119",
+    "name": "Apfelsaft naturtrüb 6 x 1 l",
+    "category": "Getränke",
+    "unit_code": "XCT",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 365
+  },
+  {
+    "product_id": "ART-10070",
+    "gtin": "2420650189814",
+    "name": "Roggenbrot 750 g",
+    "category": "Backwaren",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 6
+  },
+  {
+    "product_id": "ART-10077",
+    "gtin": "2272721264087",
+    "name": "Vollkornbrötchen",
+    "category": "Backwaren",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 3
+  },
+  {
+    "product_id": "ART-10084",
+    "gtin": "2666196966339",
+    "name": "Freilandeier 10 Stück",
+    "category": "Eier",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 28
+  },
+  {
+    "product_id": "ART-10091",
+    "gtin": "2349538289050",
+    "name": "Kaffee gemahlen 500 g",
+    "category": "Kolonialwaren",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 540
+  },
+  {
+    "product_id": "ART-10098",
+    "gtin": "2430877906910",
+    "name": "Zartbitterschokolade 100 g",
+    "category": "Süßwaren",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 365
+  },
+  {
+    "product_id": "ART-10105",
+    "gtin": "2236323521306",
+    "name": "Küchenrolle 4 Rollen",
+    "category": "Haushalt",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": false,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10112",
+    "gtin": "2999764987307",
+    "name": "Spülmittel 500 ml",
+    "category": "Haushalt",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": false,
+    "shelf_life_days": null
+  }
+]

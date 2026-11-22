@@ -1,0 +1,178 @@
+[
+  {
+    "agreement_id": "PA-00001",
+    "supplier_id": "SUP-0001",
+    "product_id": "ART-10007",
+    "supplier_item_id": "01-526824",
+    "unit_code": "C62",
+    "net_price": "0.74",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00002",
+    "supplier_id": "SUP-0001",
+    "product_id": "ART-10014",
+    "supplier_item_id": "01-579242",
+    "unit_code": "C62",
+    "net_price": "1.38",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00003",
+    "supplier_id": "SUP-0001",
+    "product_id": "ART-10021",
+    "supplier_item_id": "01-647240",
+    "unit_code": "C62",
+    "net_price": "0.92",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00004",
+    "supplier_id": "SUP-0004",
+    "product_id": "ART-10028",
+    "supplier_item_id": "04-104665",
+    "unit_code": "C62",
+    "net_price": "1.74",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00005",
+    "supplier_id": "SUP-0004",
+    "product_id": "ART-10035",
+    "supplier_item_id": "04-950612",
+    "unit_code": "C62",
+    "net_price": "4.95",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00006",
+    "supplier_id": "SUP-0002",
+    "product_id": "ART-10042",
+    "supplier_item_id": "02-889331",
+    "unit_code": "C62",
+    "net_price": "1.03",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00007",
+    "supplier_id": "SUP-0002",
+    "product_id": "ART-10049",
+    "supplier_item_id": "02-559315",
+    "unit_code": "C62",
+    "net_price": "3.52",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00008",
+    "supplier_id": "SUP-0002",
+    "product_id": "ART-10056",
+    "supplier_item_id": "02-405081",
+    "unit_code": "C62",
+    "net_price": "0.93",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00009",
+    "supplier_id": "SUP-0002",
+    "product_id": "ART-10063",
+    "supplier_item_id": "02-593416",
+    "unit_code": "C62",
+    "net_price": "1.50",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00010",
+    "supplier_id": "SUP-0003",
+    "product_id": "ART-10070",
+    "supplier_item_id": "03-275598",
+    "unit_code": "C62",
+    "net_price": "3.99",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00011",
+    "supplier_id": "SUP-0003",
+    "product_id": "ART-10077",
+    "supplier_item_id": "03-804362",
+    "unit_code": "XCT",
+    "net_price": "5.62",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00012",
+    "supplier_id": "SUP-0005",
+    "product_id": "ART-10084",
+    "supplier_item_id": "05-560313",
+    "unit_code": "C62",
+    "net_price": "1.24",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00013",
+    "supplier_id": "SUP-0005",
+    "product_id": "ART-10091",
+    "supplier_item_id": "05-214734",
+    "unit_code": "C62",
+    "net_price": "6.02",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00014",
+    "supplier_id": "SUP-0002",
+    "product_id": "ART-10098",
+    "supplier_item_id": "02-931436",
+    "unit_code": "C62",
+    "net_price": "4.50",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00015",
+    "supplier_id": "SUP-0005",
+    "product_id": "ART-10007",
+    "supplier_item_id": "KH-390836",
+    "unit_code": "C62",
+    "net_price": "0.76",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  },
+  {
+    "agreement_id": "PA-00016",
+    "supplier_id": "SUP-0005",
+    "product_id": "ART-10014",
+    "supplier_item_id": "KH-155494",
+    "unit_code": "C62",
+    "net_price": "1.42",
+    "price_base_quantity": "1",
+    "valid_from": "2026-01-01",
+    "valid_to": null
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "product_id": "ART-10007",
+    "gtin": "2087540740908",
+    "name": "Smartphone Aria X12 128 GB",
+    "category": "Mobil",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": true,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10014",
+    "gtin": "2851278112456",
+    "name": "Tablet Aria T10 64 GB",
+    "category": "Mobil",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": true,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10021",
+    "gtin": "2641203215051",
+    "name": "Notebook Lumen L14 16 GB",
+    "category": "Computer",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": true,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10028",
+    "gtin": "2220153119673",
+    "name": "Monitor Lumen 27 Zoll QHD",
+    "category": "Computer",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": true,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10035",
+    "gtin": "2293606615510",
+    "name": "SSD 1 TB NVMe",
+    "category": "Komponenten",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": true,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10042",
+    "gtin": "2331901544156",
+    "name": "WLAN-Router Mesh AX3000",
+    "category": "Netzwerk",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": true,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10049",
+    "gtin": "2093271674528",
+    "name": "Smartwatch Pulse 2",
+    "category": "Wearables",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": true,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10056",
+    "gtin": "2410618145082",
+    "name": "Bluetooth-Kopfhörer ANC",
+    "category": "Audio",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": true,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10063",
+    "gtin": "2133212156499",
+    "name": "Powerbank 20000 mAh",
+    "category": "Zubehör",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": false,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10070",
+    "gtin": "2857937622663",
+    "name": "USB-C-Ladegerät 65 W",
+    "category": "Zubehör",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": false,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10077",
+    "gtin": "2126058707888",
+    "name": "HDMI-Kabel 2 m",
+    "category": "Kabel",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": false,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10084",
+    "gtin": "2216680550027",
+    "name": "USB-C-Kabel 1 m 10er-Pack",
+    "category": "Kabel",
+    "unit_code": "XCT",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": false,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10091",
+    "gtin": "2995238241463",
+    "name": "Funktastatur DE-Layout",
+    "category": "Eingabegeräte",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": false,
+    "shelf_life_days": null
+  },
+  {
+    "product_id": "ART-10098",
+    "gtin": "2531925918586",
+    "name": "Funkmaus ergonomisch",
+    "category": "Eingabegeräte",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": false,
+    "serial_tracked": false,
+    "shelf_life_days": null
+  }
+]

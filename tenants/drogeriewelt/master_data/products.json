@@ -1,0 +1,156 @@
+[
+  {
+    "product_id": "ART-10007",
+    "gtin": "2589368981735",
+    "name": "Zahnpasta Kräuter 75 ml",
+    "category": "Mundpflege",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 900
+  },
+  {
+    "product_id": "ART-10014",
+    "gtin": "2860636613542",
+    "name": "Shampoo Mild 300 ml",
+    "category": "Haarpflege",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 900
+  },
+  {
+    "product_id": "ART-10021",
+    "gtin": "2304761483675",
+    "name": "Duschgel Sensitiv 250 ml",
+    "category": "Körperpflege",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 900
+  },
+  {
+    "product_id": "ART-10028",
+    "gtin": "2339960120793",
+    "name": "Handcreme Urea 100 ml",
+    "category": "Körperpflege",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 720
+  },
+  {
+    "product_id": "ART-10035",
+    "gtin": "2050451376689",
+    "name": "Sonnencreme LSF 30 200 ml",
+    "category": "Sonnenschutz",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 540
+  },
+  {
+    "product_id": "ART-10042",
+    "gtin": "2876767382486",
+    "name": "Vitamin C Brausetabletten 20 St.",
+    "category": "Gesundheit",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 720
+  },
+  {
+    "product_id": "ART-10049",
+    "gtin": "2472952551615",
+    "name": "Magnesium Kapseln 60 St.",
+    "category": "Gesundheit",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 720
+  },
+  {
+    "product_id": "ART-10056",
+    "gtin": "2350730047935",
+    "name": "Babybrei Apfel-Banane 190 g",
+    "category": "Baby",
+    "unit_code": "C62",
+    "vat_rate": "7",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 540
+  },
+  {
+    "product_id": "ART-10063",
+    "gtin": "2940618270212",
+    "name": "Pflaster Strips 20 St.",
+    "category": "Gesundheit",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 1460
+  },
+  {
+    "product_id": "ART-10070",
+    "gtin": "2561507774644",
+    "name": "Vollwaschmittel Pulver 1,35 kg",
+    "category": "Haushalt",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 1080
+  },
+  {
+    "product_id": "ART-10077",
+    "gtin": "2017023852835",
+    "name": "Taschentücher 24 x 10 St.",
+    "category": "Haushalt",
+    "unit_code": "XCT",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 1825
+  },
+  {
+    "product_id": "ART-10084",
+    "gtin": "2487530352270",
+    "name": "Deo Roller 50 ml",
+    "category": "Körperpflege",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 720
+  },
+  {
+    "product_id": "ART-10091",
+    "gtin": "2564000535378",
+    "name": "Rasierklingen 4 St.",
+    "category": "Rasur",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 1825
+  },
+  {
+    "product_id": "ART-10098",
+    "gtin": "2141004107086",
+    "name": "Kontaktlinsenlösung 360 ml",
+    "category": "Gesundheit",
+    "unit_code": "C62",
+    "vat_rate": "19",
+    "batch_tracked": true,
+    "serial_tracked": false,
+    "shelf_life_days": 540
+  }
+]

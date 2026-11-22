@@ -1,0 +1,116 @@
+[
+  {
+    "supplier_id": "SUP-0001",
+    "name": "Nordhain Feinkost GmbH",
+    "vat_id": "DE992377029",
+    "address": {
+      "street": "Am Kornspeicher 12",
+      "post_code": "24103",
+      "city": "Kiel",
+      "country_code": "DE"
+    },
+    "iban": "DE42990347778670679926",
+    "bic": "BTMWDEXX",
+    "contact_name": "Malte Brodersen",
+    "contact_phone": "+49 571 6397572",
+    "contact_email": "malte@nordhain-feinkost.example",
+    "electronic_address": "rechnung@nordhain-feinkost.example",
+    "language": "de",
+    "payment_terms_days": 30
+  },
+  {
+    "supplier_id": "SUP-0002",
+    "name": "Moorwiesen Molkerei eG",
+    "vat_id": "DE999949584",
+    "address": {
+      "street": "Deichstraße 4",
+      "post_code": "26655",
+      "city": "Westerstede",
+      "country_code": "DE"
+    },
+    "iban": "DE45998492026852136621",
+    "bic": "WQPHDEXX",
+    "contact_name": "Silke Janßen",
+    "contact_phone": "+49 940 5735908",
+    "contact_email": "silke@moorwiesen-molkerei.example",
+    "electronic_address": "rechnung@moorwiesen-molkerei.example",
+    "language": "de",
+    "payment_terms_days": 14
+  },
+  {
+    "supplier_id": "SUP-0003",
+    "name": "Talbach Obst & Gemüse KG",
+    "vat_id": "DE991671397",
+    "address": {
+      "street": "Auenring 31",
+      "post_code": "79539",
+      "city": "Lörrach",
+      "country_code": "DE"
+    },
+    "iban": "DE23997088953571758399",
+    "bic": "MLSJDEXX",
+    "contact_name": "Ercan Yildiz",
+    "contact_phone": "+49 906 4265036",
+    "contact_email": "ercan@talbach-obst-gemuse.example",
+    "electronic_address": "rechnung@talbach-obst-gemuse.example",
+    "language": "de",
+    "payment_terms_days": 10
+  },
+  {
+    "supplier_id": "SUP-0004",
+    "name": "Lindengrund Getränke GmbH",
+    "vat_id": "DE991215013",
+    "address": {
+      "street": "Quellenweg 2",
+      "post_code": "34117",
+      "city": "Kassel",
+      "country_code": "DE"
+    },
+    "iban": "DE50997914673037693603",
+    "bic": "YFHKDEXX",
+    "contact_name": "Petra Gessler",
+    "contact_phone": "+49 338 9822795",
+    "contact_email": "petra@lindengrund-getranke.example",
+    "electronic_address": "rechnung@lindengrund-getranke.example",
+    "language": "de",
+    "payment_terms_days": 30
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "name": "Haselrode Backwaren GmbH",
+    "vat_id": "DE994531163",
+    "address": {
+      "street": "Mühlenkamp 9",
+      "post_code": "49074",
+      "city": "Osnabrück",
+      "country_code": "DE"
+    },
+    "iban": "DE47998635083518861590",
+    "bic": "BPZSDEXX",
+    "contact_name": "Tobias Rehm",
+    "contact_phone": "+49 597 5503063",
+    "contact_email": "tobias@haselrode-backwaren.example",
+    "electronic_address": "rechnung@haselrode-backwaren.example",
+    "language": "de",
+    "payment_terms_days": 7
+  },
+  {
+    "supplier_id": "SUP-0006",
+    "name": "Kranichfeld Handelskontor GmbH",
+    "vat_id": "DE996247439",
+    "address": {
+      "street": "Speicherweg 7",
+      "post_code": "28195",
+      "city": "Bremen",
+      "country_code": "DE"
+    },
+    "iban": "DE42990142127618576944",
+    "bic": "BHOPDEXX",
+    "contact_name": "Jana Oltmanns",
+    "contact_phone": "+49 915 4931343",
+    "contact_email": "jana@kranichfeld-handelskontor.example",
+    "electronic_address": "rechnung@kranichfeld-handelskontor.example",
+    "language": "de",
+    "payment_terms_days": 30
+  }
+]

@@ -45,6 +45,38 @@ jobs:
         run: uv run pytest -m "not integration and not cloud"
       - name: Validate tenant configs
         run: uv run rechnungscheck tenants validate
+      - name: Committed dataset matches the generator
+        run: |
+          uv run python -m datagen generate
+          git diff --exit-code --stat -- tenants ':!tenants/*/evals/documents.sha256'
+      - name: Rendered documents vs committed SHA-256 (informational, renderers may differ across OSes)
+        continue-on-error: true
+        run: uv run python -m datagen verify
+
+  containers:
+    name: validator images, local stack integration tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
+        with:
+          enable-cache: true
+      - name: Build validator images (downloads are SHA-256 pinned)
+        run: |
+          docker build -t rechnungscheck/validator-kosit:dev validator/kosit
+          docker build -t rechnungscheck/validator-mustang:dev validator/mustang
+      - name: Start local stack
+        run: docker compose up -d --wait postgres azurite validator
+      - name: Integration tests
+        run: |
+          uv sync --locked
+          uv run pytest -m integration
+      - name: Stack logs on failure
+        if: failure()
+        run: docker compose logs --tail 200
 
   infra:
     name: bicep lint, IaC scan

@@ -1,0 +1,14 @@
+[
+  {
+    "product_id": "ART-10056",
+    "from_unit": "XCT",
+    "to_unit": "C62",
+    "factor": "12"
+  },
+  {
+    "product_id": "ART-10063",
+    "from_unit": "XCT",
+    "to_unit": "C62",
+    "factor": "6"
+  }
+]

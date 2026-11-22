@@ -89,6 +89,10 @@ class Party(_Model):
     name: Extracted[str] | None = _bt("BT-27/BT-44", "Name")
     vat_id: Extracted[str] | None = _bt("BT-31/BT-48", "VAT identifier")
     tax_number: Extracted[str] | None = _bt("BT-32", "Tax registration identifier (seller only)")
+    electronic_address: Extracted[str] | None = _bt("BT-34/BT-49", "Electronic address")
+    contact_name: Extracted[str] | None = _bt("BT-41", "Seller contact point (seller only)")
+    contact_phone: Extracted[str] | None = _bt("BT-42", "Seller contact telephone number (seller only)")
+    contact_email: Extracted[str] | None = _bt("BT-43", "Seller contact email address (seller only)")
     address: PostalAddress | None = None
 
 

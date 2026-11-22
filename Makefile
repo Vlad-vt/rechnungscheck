@@ -12,7 +12,7 @@ define newline
 
 endef
 
-.PHONY: help install fmt lint typecheck test validate-tenants bicep iac-scan secrets audit check
+.PHONY: help install fmt lint typecheck test validate-tenants bicep iac-scan secrets audit check \n	up down data data-verify corpus test-integration docker-build compare-validators
 
 help: ## List targets
 	@uv run --quiet python scripts/make_help.py Makefile
@@ -52,3 +52,30 @@ audit: ## pip-audit over the locked dependency set (all groups)
 	uvx pip-audit -r $(AUDIT_REQ) --disable-pip --progress-spinner off
 
 check: lint typecheck test validate-tenants bicep iac-scan secrets audit ## Everything ci.yml runs that exists so far
+
+# --- local stack and data (Phase 2) -------------------------------------------------
+
+up: ## Start Postgres, Azurite and the KoSIT validator (Docker Compose)
+	docker compose up -d --build --wait postgres azurite validator
+
+down: ## Stop the local stack (keeps volumes)
+	docker compose down
+
+data: ## Generate master data, contracts, case manifests and documents (data/generated)
+	uv run python -m datagen generate
+
+data-verify: ## Check rendered documents against the committed SHA-256 lists
+	uv run python -m datagen verify
+
+corpus: ## Fetch the public ZUGFeRD corpus at the pinned commit into data/corpus
+	uv run python scripts/fetch_corpus.py
+
+test-integration: ## Integration tests (needs `make up`)
+	uv run pytest -m integration
+
+docker-build: ## Build the validator images
+	docker build -t rechnungscheck/validator-kosit:dev validator/kosit
+	docker build -t rechnungscheck/validator-mustang:dev validator/mustang
+
+compare-validators: ## KoSIT vs Mustang on corpus + generated files (needs `make up corpus data docker-build`)
+	uv run python -m evals.runners.validator_comparison

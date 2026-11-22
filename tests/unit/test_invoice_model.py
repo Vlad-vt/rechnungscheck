@@ -70,7 +70,7 @@ def test_unknown_fields_are_rejected():
 def test_models_are_immutable():
     inv = Invoice(document_id="d", source_format=SourceFormat.SCAN)
     with pytest.raises(ValidationError):
-        inv.document_id = "other"  # type: ignore[misc]
+        inv.document_id = "other"
 
 
 @pytest.mark.parametrize(

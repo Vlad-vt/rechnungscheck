@@ -1,0 +1,40 @@
+# Local stack: Postgres (+pgvector), Azurite (Blob/Queue emulator), KoSIT validator.
+# All ports bind to 127.0.0.1 only. Credentials here are local-only defaults, not secrets.
+name: rechnungscheck
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: rechnungscheck
+      POSTGRES_USER: rechnungscheck
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-dev-only}
+    ports: ["127.0.0.1:5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rechnungscheck -d rechnungscheck"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite:3.35.0
+    command: ["azurite", "--blobHost", "0.0.0.0", "--queueHost", "0.0.0.0", "--skipApiVersionCheck", "--loose", "--location", "/data"]
+    ports: ["127.0.0.1:10000:10000", "127.0.0.1:10001:10001"]
+    volumes: [azurite:/data]
+
+  validator:
+    build: validator/kosit
+    image: rechnungscheck/validator-kosit:dev
+    ports: ["127.0.0.1:8081:8080"]
+
+  # One-shot tool, not a service: `docker compose run --rm mustang --action validate --source /work/x.pdf`
+  mustang:
+    build: validator/mustang
+    image: rechnungscheck/validator-mustang:dev
+    profiles: [tools]
+    volumes: [./data:/work:ro]
+
+volumes:
+  pgdata:
+  azurite:

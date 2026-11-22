@@ -27,3 +27,6 @@ infra/bicep/**/*.json
 # local artefacts
 evals/results/local/
 *.log
+
+# generated documents (rebuild with `make data`)
+data/

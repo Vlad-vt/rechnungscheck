@@ -1,0 +1,97 @@
+[
+  {
+    "supplier_id": "SUP-0001",
+    "name": "Voltaris Distribution GmbH",
+    "vat_id": "DE996183542",
+    "address": {
+      "street": "Industriestraße 88",
+      "post_code": "63067",
+      "city": "Offenbach",
+      "country_code": "DE"
+    },
+    "iban": "DE08994729410711849106",
+    "bic": "LQHFDEXX",
+    "contact_name": "Daniel Kurz",
+    "contact_phone": "+49 748 5605918",
+    "contact_email": "daniel@voltaris-distribution.example",
+    "electronic_address": "rechnung@voltaris-distribution.example",
+    "language": "de",
+    "payment_terms_days": 30
+  },
+  {
+    "supplier_id": "SUP-0002",
+    "name": "Northgate Components GmbH",
+    "vat_id": "DE990663182",
+    "address": {
+      "street": "Airport Park 3",
+      "post_code": "40474",
+      "city": "Düsseldorf",
+      "country_code": "DE"
+    },
+    "iban": "DE08997767345085418334",
+    "bic": "EVNEDEXX",
+    "contact_name": "Olivia Grant",
+    "contact_phone": "+49 386 4343327",
+    "contact_email": "olivia@northgate-components.example",
+    "electronic_address": "rechnung@northgate-components.example",
+    "language": "en",
+    "payment_terms_days": 45
+  },
+  {
+    "supplier_id": "SUP-0003",
+    "name": "Pixelwerk Elektronik GmbH",
+    "vat_id": "DE999249475",
+    "address": {
+      "street": "Lötstraße 15",
+      "post_code": "90429",
+      "city": "Nürnberg",
+      "country_code": "DE"
+    },
+    "iban": "DE82998758699612160185",
+    "bic": "AIGZDEXX",
+    "contact_name": "Murat Aksoy",
+    "contact_phone": "+49 793 7190272",
+    "contact_email": "murat@pixelwerk-elektronik.example",
+    "electronic_address": "rechnung@pixelwerk-elektronik.example",
+    "language": "de",
+    "payment_terms_days": 30
+  },
+  {
+    "supplier_id": "SUP-0004",
+    "name": "Kabelhaus Seidl KG",
+    "vat_id": "DE997173205",
+    "address": {
+      "street": "Gewerbering 6",
+      "post_code": "84034",
+      "city": "Landshut",
+      "country_code": "DE"
+    },
+    "iban": "DE73993640721374247907",
+    "bic": "MCOZDEXX",
+    "contact_name": "Franziska Seidl",
+    "contact_phone": "+49 817 4062078",
+    "contact_email": "franziska@kabelhaus-seidl.example",
+    "electronic_address": "rechnung@kabelhaus-seidl.example",
+    "language": "de",
+    "payment_terms_days": 20
+  },
+  {
+    "supplier_id": "SUP-0005",
+    "name": "Kranichfeld Handelskontor GmbH",
+    "vat_id": "DE990237257",
+    "address": {
+      "street": "Speicherweg 7",
+      "post_code": "28195",
+      "city": "Bremen",
+      "country_code": "DE"
+    },
+    "iban": "DE34993839596500706174",
+    "bic": "HRTTDEXX",
+    "contact_name": "Jana Oltmanns",
+    "contact_phone": "+49 692 8812064",
+    "contact_email": "jana@kranichfeld-handelskontor.example",
+    "electronic_address": "rechnung@kranichfeld-handelskontor.example",
+    "language": "de",
+    "payment_terms_days": 30
+  }
+]
