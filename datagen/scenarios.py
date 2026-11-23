@@ -14,6 +14,7 @@ from datetime import date, timedelta
 from decimal import ROUND_HALF_UP, Decimal
 
 from datagen import ids
+from datagen.catalog import BuyerSeed
 from datagen.labels import expected_outcome
 from datagen.models import (
     Case,
@@ -819,25 +820,22 @@ INJECTIONS_EN = [
 ]
 
 
-def _buyer_party(cfg: TenantConfig) -> Party_:
-    from datagen import catalog  # noqa: PLC0415
-
-    b = catalog.BUYERS[cfg.tenant_id]
+def _buyer_party(cfg: TenantConfig, buyer: BuyerSeed) -> Party_:
     return Party_(
-        name=b.name,
+        name=buyer.name,
         vat_id=None,
-        street=b.street,
-        post_code=b.post_code,
-        city=b.city,
+        street=buyer.street,
+        post_code=buyer.post_code,
+        city=buyer.city,
         electronic_address=f"rechnungseingang@{cfg.tenant_id}.example",
     )
 
 
 def generate_cases(
-    cfg: TenantConfig, md: TenantMasterData, seed: int
+    cfg: TenantConfig, md: TenantMasterData, buyer_seed: BuyerSeed, seed: int
 ) -> tuple[list[Case], list[InvoiceHistoryEntry]]:
     rng = stream(seed, "scenarios", cfg.tenant_id)
-    buyer = _buyer_party(cfg)
+    buyer = _buyer_party(cfg, buyer_seed)
     history: list[InvoiceHistoryEntry] = []
     cases: list[Case] = []
     seq = 0

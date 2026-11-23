@@ -7,6 +7,7 @@ from pathlib import Path
 import pytest
 from lxml import etree
 
+from datagen.catalog import load_seed
 from datagen.masterdata import build_master_data
 from datagen.render.cii import render_cii
 from datagen.render.ubl import render_ubl
@@ -31,8 +32,8 @@ def kosit():
 @pytest.fixture(scope="module")
 def clean_case():
     cfg = load_tenant(TENANTS / "frischemarkt")
-    md = build_master_data("frischemarkt", 42)
-    cases, _ = generate_cases(cfg, md, 42)
+    md = build_master_data("frischemarkt", load_seed(TENANTS / "frischemarkt"), 42)
+    cases, _ = generate_cases(cfg, md, load_seed(TENANTS / cfg.tenant_id).buyer, 42)
     return next(c for c in cases if c.scenario == "clean")
 
 

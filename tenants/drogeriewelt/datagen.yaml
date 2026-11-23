@@ -1,0 +1,34 @@
+# Seed for the synthetic data generator (datagen). Demo tenants only: a real tenant
+# brings its own master data. All names, people and streets are fictitious.
+# `supplier` is the index into `suppliers`; units are UN/ECE codes (C62 piece, KGM kg, XCT carton).
+buyer: {name: Drogeriewelt Filial GmbH, street: Lindenallee 44, post_code: '50667', city: Köln}
+contract_terms: {price_change_notice_days: 90, credit_note_days: 21}
+suppliers:
+- {name: Blütenhain Kosmetik GmbH, street: Rosengarten 21, post_code: '64283', city: Darmstadt, contact: Lea Hartwig, language: de,
+  payment_terms_days: 30}
+- {name: Sanavita Pharma Vertrieb GmbH, street: Apothekergasse 5, post_code: '69117', city: Heidelberg, contact: Jonas Wirth,
+  language: de, payment_terms_days: 30}
+- {name: Klarquell Haushaltswaren GmbH, street: Seifenweg 18, post_code: '42103', city: Wuppertal, contact: Nina Pohl, language: de,
+  payment_terms_days: 45}
+- {name: Mildwerk Naturpflege GmbH, street: Kräuterhof 3, post_code: '87435', city: Kempten, contact: Anton Huber, language: de,
+  payment_terms_days: 30}
+- {name: Kranichfeld Handelskontor GmbH, street: Speicherweg 7, post_code: '28195', city: Bremen, contact: Jana Oltmanns,
+  language: de, payment_terms_days: 30, shared: true}
+products:
+- {name: Zahnpasta Kräuter 75 ml, category: Mundpflege, unit: C62, vat: 19, price: 0.69, supplier: 0, batch: true, shelf_life_days: 900}
+- {name: Shampoo Mild 300 ml, category: Haarpflege, unit: C62, vat: 19, price: 1.29, supplier: 0, batch: true, shelf_life_days: 900}
+- {name: Duschgel Sensitiv 250 ml, category: Körperpflege, unit: C62, vat: 19, price: 0.95, supplier: 0, batch: true, shelf_life_days: 900}
+- {name: Handcreme Urea 100 ml, category: Körperpflege, unit: C62, vat: 19, price: 1.85, supplier: 3, batch: true, shelf_life_days: 720}
+- {name: Sonnencreme LSF 30 200 ml, category: Sonnenschutz, unit: C62, vat: 19, price: 4.95, supplier: 3, batch: true, shelf_life_days: 540}
+- {name: Vitamin C Brausetabletten 20 St., category: Gesundheit, unit: C62, vat: 7, price: 0.99, supplier: 1, batch: true,
+  shelf_life_days: 720}
+- {name: Magnesium Kapseln 60 St., category: Gesundheit, unit: C62, vat: 7, price: 3.49, supplier: 1, batch: true, shelf_life_days: 720}
+- {name: Babybrei Apfel-Banane 190 g, category: Baby, unit: C62, vat: 7, price: 0.89, supplier: 1, batch: true, shelf_life_days: 540}
+- {name: Pflaster Strips 20 St., category: Gesundheit, unit: C62, vat: 19, price: 1.49, supplier: 1, batch: true, shelf_life_days: 1460}
+- {name: 'Vollwaschmittel Pulver 1,35 kg', category: Haushalt, unit: C62, vat: 19, price: 3.95, supplier: 2, batch: true,
+  shelf_life_days: 1080}
+- {name: Taschentücher 24 x 10 St., category: Haushalt, unit: XCT, vat: 19, price: 5.4, supplier: 2, pack_size: 24, batch: true,
+  shelf_life_days: 1825}
+- {name: Deo Roller 50 ml, category: Körperpflege, unit: C62, vat: 19, price: 1.15, supplier: 4, batch: true, shelf_life_days: 720}
+- {name: Rasierklingen 4 St., category: Rasur, unit: C62, vat: 19, price: 5.9, supplier: 4, batch: true, shelf_life_days: 1825}
+- {name: Kontaktlinsenlösung 360 ml, category: Gesundheit, unit: C62, vat: 19, price: 4.25, supplier: 1, batch: true, shelf_life_days: 540}

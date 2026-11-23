@@ -12,7 +12,8 @@ define newline
 
 endef
 
-.PHONY: help install fmt lint typecheck test validate-tenants bicep iac-scan secrets audit check \n	up down data data-verify corpus test-integration docker-build compare-validators
+.PHONY: help install fmt lint typecheck test validate-tenants bicep iac-scan secrets audit check
+.PHONY: up down data data-verify corpus test-integration docker-build compare-validators
 
 help: ## List targets
 	@uv run --quiet python scripts/make_help.py Makefile

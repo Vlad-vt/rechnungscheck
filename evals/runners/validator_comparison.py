@@ -240,9 +240,23 @@ def _reuse_mustang(items: list[Item]) -> None:
             )
 
 
+def _git(*args: str) -> str:
+    return subprocess.run(["git", *args], capture_output=True, text=True, check=False).stdout.strip()  # noqa: S603
+
+
+def _git_state() -> dict[str, object]:
+    return {
+        "commit": _git("rev-parse", "HEAD"),
+        "dirty": bool(_git("status", "--porcelain", "--untracked-files=no")),
+        "corpus": _git("-C", str(DATA / "corpus"), "rev-parse", "HEAD"),
+    }
+
+
 def main() -> None:
     import sys  # noqa: PLC0415
 
+    # Record the code state BEFORE running, so edits made while it runs cannot mislabel the result.
+    git_state = _git_state()
     items = corpus_items(0)
     items += generated_items(len(items))
     print(f"{len(items)} files")
@@ -277,28 +291,11 @@ def main() -> None:
                 by_label[lb]["n"] += 1
                 by_label[lb]["kosit_reject"] += it.kosit == "reject"
                 by_label[lb]["mustang_reject"] += it.mustang == "reject"
-    commit = subprocess.run(
-        ["git", "rev-parse", "HEAD"], capture_output=True, text=True, check=False
-    ).stdout.strip()
-    corpus_sha = subprocess.run(  # noqa: S603
-        ["git", "-C", str(DATA / "corpus"), "rev-parse", "HEAD"],
-        capture_output=True,
-        text=True,
-        check=False,
-    ).stdout.strip()
-    dirty = bool(
-        subprocess.run(
-            ["git", "status", "--porcelain", "--untracked-files=no"],
-            capture_output=True,
-            text=True,
-            check=False,
-        ).stdout.strip()
-    )
     result = {
         "run_at": datetime.now(UTC).isoformat(timespec="seconds"),
-        "repo_commit": commit,
-        "repo_dirty": dirty,
-        "corpus_commit": corpus_sha,
+        "repo_commit": git_state["commit"],
+        "repo_dirty": git_state["dirty"],
+        "corpus_commit": git_state["corpus"],
         "validators": {
             "kosit": "1.6.3 + xrechnung-3.0.2 config 2026-08-31",
             "mustang": "2.26.0 (CLI, veraPDF)",

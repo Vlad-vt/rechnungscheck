@@ -10,6 +10,7 @@ cross-tenant retrieval leak produces a detectably wrong answer.
 
 from __future__ import annotations
 
+from datagen.catalog import TenantSeed
 from rechnungscheck.domain.masterdata import Supplier, TenantMasterData
 from rechnungscheck.tenancy import TenantConfig
 
@@ -142,19 +143,20 @@ def _clauses(cfg: TenantConfig, lang: str) -> dict[str, str]:
     return {"quantity_clause": quantity, "mandatory_clause": mandatory, "shelf_clause": shelf}
 
 
-def render_contract(cfg: TenantConfig, buyer_name: str, supplier: Supplier, index: int) -> tuple[str, str]:
+def render_contract(
+    cfg: TenantConfig, tseed: TenantSeed, supplier: Supplier, index: int, shared: bool
+) -> tuple[str, str]:
     """Return ``(filename, markdown)`` for one supplier contract."""
     lang = supplier.language
     template = _DE if lang == "de" else _EN
-    shared = "Kranichfeld" in supplier.name
     # Tenant-specific numbers, also for the shared supplier.
-    notice = {"frischemarkt": 30, "technikhaus": 60, "drogeriewelt": 90}.get(cfg.tenant_id, 45)
-    credit = {"frischemarkt": 10, "technikhaus": 14, "drogeriewelt": 21}.get(cfg.tenant_id, 14)
+    notice = tseed.contract_terms.price_change_notice_days
+    credit = tseed.contract_terms.credit_note_days
     if shared:
         notice += 15
     text = template.format(
         contract_id=f"RV-{cfg.tenant_id[:3].upper()}-{index + 1:03d}",
-        buyer=buyer_name,
+        buyer=tseed.buyer.name,
         supplier=supplier.name,
         supplier_id=supplier.supplier_id,
         city=supplier.address.city,
@@ -167,5 +169,7 @@ def render_contract(cfg: TenantConfig, buyer_name: str, supplier: Supplier, inde
     return f"{supplier.supplier_id.lower()}-rahmenvertrag.md", text
 
 
-def render_contracts(cfg: TenantConfig, buyer_name: str, md: TenantMasterData) -> dict[str, str]:
-    return dict(render_contract(cfg, buyer_name, s, i) for i, s in enumerate(md.suppliers))
+def render_contracts(cfg: TenantConfig, tseed: TenantSeed, md: TenantMasterData) -> dict[str, str]:
+    return dict(
+        render_contract(cfg, tseed, s, i, shared=i == tseed.shared_index) for i, s in enumerate(md.suppliers)
+    )

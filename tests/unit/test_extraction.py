@@ -4,6 +4,7 @@ from pathlib import Path
 import pytest
 from lxml import etree
 
+from datagen.catalog import load_seed
 from datagen.masterdata import build_master_data
 from datagen.render.cii import render_cii
 from datagen.render.pdf import make_zugferd, render_invoice_pdf
@@ -29,8 +30,8 @@ def sample_cases():
     out = []
     for tid in ("frischemarkt", "technikhaus", "drogeriewelt"):
         cfg = load_tenant(TENANTS / tid)
-        md = build_master_data(tid, 42)
-        cases, _ = generate_cases(cfg, md, 42)
+        md = build_master_data(tid, load_seed(TENANTS / tid), 42)
+        cases, _ = generate_cases(cfg, md, load_seed(TENANTS / cfg.tenant_id).buyer, 42)
         wanted = {
             "clean",
             "unit_mismatch_equivalent",

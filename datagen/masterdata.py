@@ -1,4 +1,4 @@
-"""Generate tenant master data from the curated catalogue."""
+"""Generate tenant master data from the tenant's ``datagen.yaml`` seed."""
 
 from __future__ import annotations
 
@@ -7,7 +7,8 @@ import unicodedata
 from datetime import date
 from decimal import Decimal
 
-from datagen import catalog, ids
+from datagen import ids
+from datagen.catalog import TenantSeed
 from datagen.rng import stream
 from rechnungscheck.domain.masterdata import (
     Address,
@@ -31,10 +32,10 @@ def _domain(supplier_name: str) -> str:
     return f"{base}.example"
 
 
-def build_master_data(tenant_id: str, seed: int) -> TenantMasterData:
+def build_master_data(tenant_id: str, tseed: TenantSeed, seed: int) -> TenantMasterData:
     rng = stream(seed, "masterdata", tenant_id)
     suppliers: list[Supplier] = []
-    for i, s in enumerate(catalog.SUPPLIERS[tenant_id]):
+    for i, s in enumerate(tseed.suppliers):
         dom = _domain(s.name)
         local = _slug(s.contact).split("-")[0]
         suppliers.append(
@@ -57,7 +58,7 @@ def build_master_data(tenant_id: str, seed: int) -> TenantMasterData:
     products: list[Product] = []
     conversions: list[UnitConversion] = []
     agreements: list[PriceAgreement] = []
-    for j, p in enumerate(catalog.PRODUCTS[tenant_id]):
+    for j, p in enumerate(tseed.products):
         product_id = f"ART-{(j + 1) * 7 + 10000:05d}"
         products.append(
             Product(
@@ -94,7 +95,7 @@ def build_master_data(tenant_id: str, seed: int) -> TenantMasterData:
             )
         )
     # The shared supplier also sells two products in every tenant (if not already assigned).
-    shared_idx = next(i for i, s in enumerate(catalog.SUPPLIERS[tenant_id]) if s == catalog.SHARED_SUPPLIER)
+    shared_idx = tseed.shared_index
     shared_id = suppliers[shared_idx].supplier_id
     assigned = {a.product_id for a in agreements if a.supplier_id == shared_id}
     for k, prod in enumerate(products[:2]):

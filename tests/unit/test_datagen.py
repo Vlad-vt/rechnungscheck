@@ -4,9 +4,11 @@ from decimal import Decimal
 from pathlib import Path
 
 import pytest
+import yaml
+from pydantic import ValidationError
 
 from datagen import ids
-from datagen.catalog import SHARED_SUPPLIER
+from datagen.catalog import TenantSeed, load_seed
 from datagen.contracts import render_contracts
 from datagen.labels import expected_outcome
 from datagen.masterdata import build_master_data
@@ -16,6 +18,7 @@ from rechnungscheck.tenancy import Action, load_all
 
 TENANTS = Path(__file__).resolve().parents[2] / "tenants"
 SEED = 42
+SHARED_NAME = "Kranichfeld Handelskontor GmbH"
 
 
 @pytest.fixture(scope="module")
@@ -29,8 +32,8 @@ def tenants():
 def generated(tenants):
     out = {}
     for tid, cfg in tenants.items():
-        md = build_master_data(tid, SEED)
-        out[tid] = (cfg, md, *generate_cases(cfg, md, SEED))
+        md = build_master_data(tid, load_seed(TENANTS / tid), SEED)
+        out[tid] = (cfg, md, *generate_cases(cfg, md, load_seed(TENANTS / cfg.tenant_id).buyer, SEED))
     return out
 
 
@@ -62,10 +65,13 @@ def test_iban_check_rejects_a_typo():
 
 def test_generation_is_deterministic(tenants):
     cfg = tenants["frischemarkt"]
-    md1, md2 = build_master_data("frischemarkt", SEED), build_master_data("frischemarkt", SEED)
+    md1, md2 = (
+        build_master_data("frischemarkt", load_seed(TENANTS / "frischemarkt"), SEED),
+        build_master_data("frischemarkt", load_seed(TENANTS / "frischemarkt"), SEED),
+    )
     assert md1 == md2
-    a, _ = generate_cases(cfg, md1, SEED)
-    b, _ = generate_cases(cfg, md2, SEED)
+    a, _ = generate_cases(cfg, md1, load_seed(TENANTS / cfg.tenant_id).buyer, SEED)
+    b, _ = generate_cases(cfg, md2, load_seed(TENANTS / cfg.tenant_id).buyer, SEED)
     assert [c.model_dump_json() for c in a] == [c.model_dump_json() for c in b]
 
 
@@ -189,8 +195,8 @@ def test_oracle_bank_change_beats_everything(tenants):
 def test_shared_supplier_has_different_bank_details_per_tenant(tenants):
     ibans = set()
     for tid in tenants:
-        md = build_master_data(tid, SEED)
-        shared = [s for s in md.suppliers if s.name == SHARED_SUPPLIER.name]
+        md = build_master_data(tid, load_seed(TENANTS / tid), SEED)
+        shared = [s for s in md.suppliers if s.name == SHARED_NAME]
         assert len(shared) == 1, tid
         ibans.add(shared[0].iban)
     assert len(ibans) == len(tenants)
@@ -199,8 +205,36 @@ def test_shared_supplier_has_different_bank_details_per_tenant(tenants):
 def test_contracts_exist_per_supplier_and_differ_across_tenants(tenants):
     shared_texts = set()
     for tid, cfg in tenants.items():
-        md = build_master_data(tid, SEED)
-        contracts = render_contracts(cfg, "Buyer GmbH", md)
+        md = build_master_data(tid, load_seed(TENANTS / tid), SEED)
+        contracts = render_contracts(cfg, load_seed(TENANTS / tid), md)
         assert len(contracts) == len(md.suppliers)
-        shared_texts |= {t for t in contracts.values() if SHARED_SUPPLIER.name in t}
+        shared_texts |= {t for t in contracts.values() if SHARED_NAME in t}
     assert len(shared_texts) == len(tenants)
+
+
+# --- generator seed (tenants/<id>/datagen.yaml) ------------------------------------
+
+
+def _seed_raw(tid="frischemarkt"):
+    return yaml.safe_load((TENANTS / tid / "datagen.yaml").read_text(encoding="utf-8"))
+
+
+def test_every_demo_tenant_has_a_valid_seed(tenants):
+    for tid in tenants:
+        assert load_seed(TENANTS / tid).suppliers
+
+
+@pytest.mark.parametrize(
+    ("mutate", "message"),
+    [
+        (lambda r: r["suppliers"][0].update(shared=True), "exactly one supplier"),
+        (lambda r: r["products"][0].update(supplier=99), "supplier index"),
+        (lambda r: r["products"][0].update(unit="XCT"), "pack_size"),
+        (lambda r: r["products"][0].update(colour="red"), "Extra inputs"),
+    ],
+)
+def test_invalid_seed_is_rejected(mutate, message):
+    raw = _seed_raw()
+    mutate(raw)
+    with pytest.raises(ValidationError, match=message):
+        TenantSeed.model_validate(raw)

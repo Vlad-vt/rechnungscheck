@@ -12,7 +12,7 @@ import json
 from datetime import UTC, date, datetime
 from pathlib import Path
 
-from datagen import catalog
+from datagen.catalog import load_seed
 from datagen.contracts import render_contracts
 from datagen.masterdata import build_master_data
 from datagen.models import Case, Injection, InvoiceHistoryEntry
@@ -42,7 +42,7 @@ def write_master_data(tenant_dir: Path, md: TenantMasterData, history: list[Invo
     _dump(out / "invoice_history.json", [h.model_dump(mode="json") for h in history])
 
 
-def render_case(case: Case, md: TenantMasterData, seed: int, data_root: Path) -> Case:
+def render_case(case: Case, md: TenantMasterData, buyer_name: str, seed: int, data_root: Path) -> Case:
     supplier = next(s for s in md.suppliers if s.supplier_id == case.purchase_order.supplier_id)
     lang = supplier.language
     rng = stream(seed, "render", case.case_id)
@@ -69,8 +69,7 @@ def render_case(case: Case, md: TenantMasterData, seed: int, data_root: Path) ->
     (folder / name).write_bytes(blob)
     files["invoice"] = (rel / name).as_posix()
     if case.delivery_note is not None:
-        buyer = catalog.BUYERS[case.tenant_id].name
-        dn_pdf = render_delivery_note_pdf(case.delivery_note, supplier.name, buyer, lang)
+        dn_pdf = render_delivery_note_pdf(case.delivery_note, supplier.name, buyer_name, lang)
         (folder / "delivery_note.pdf").write_bytes(dn_pdf)
         files["delivery_note"] = (rel / "delivery_note.pdf").as_posix()
     return case.model_copy(update={"files": files})
@@ -79,15 +78,16 @@ def render_case(case: Case, md: TenantMasterData, seed: int, data_root: Path) ->
 def build_tenant(
     cfg: TenantConfig, tenant_dir: Path, data_root: Path, seed: int = DEFAULT_SEED, render: bool = True
 ) -> list[Case]:
-    md = build_master_data(cfg.tenant_id, seed)
-    cases, history = generate_cases(cfg, md, seed)
+    tseed = load_seed(tenant_dir)
+    md = build_master_data(cfg.tenant_id, tseed, seed)
+    cases, history = generate_cases(cfg, md, tseed.buyer, seed)
     write_master_data(tenant_dir, md, history)
     contracts_dir = tenant_dir / "contracts"
     contracts_dir.mkdir(parents=True, exist_ok=True)
-    for fname, text in render_contracts(cfg, catalog.BUYERS[cfg.tenant_id].name, md).items():
+    for fname, text in render_contracts(cfg, tseed, md).items():
         (contracts_dir / fname).write_text(text, encoding="utf-8", newline="\n")
     if render:
-        cases = [render_case(c, md, seed, data_root) for c in cases]
+        cases = [render_case(c, md, tseed.buyer.name, seed, data_root) for c in cases]
     evals = tenant_dir / "evals"
     evals.mkdir(parents=True, exist_ok=True)
     with (evals / "cases.jsonl").open("w", encoding="utf-8", newline="\n") as fh:

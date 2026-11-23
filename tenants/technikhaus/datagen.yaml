@@ -1,0 +1,31 @@
+# Seed for the synthetic data generator (datagen). Demo tenants only: a real tenant
+# brings its own master data. All names, people and streets are fictitious.
+# `supplier` is the index into `suppliers`; units are UN/ECE codes (C62 piece, KGM kg, XCT carton).
+buyer: {name: Technikhaus Retail GmbH, street: Schaltweg 20, post_code: '70173', city: Stuttgart}
+contract_terms: {price_change_notice_days: 60, credit_note_days: 14}
+suppliers:
+- {name: Voltaris Distribution GmbH, street: Industriestraße 88, post_code: '63067', city: Offenbach, contact: Daniel Kurz,
+  language: de, payment_terms_days: 30}
+- {name: Northgate Components GmbH, street: Airport Park 3, post_code: '40474', city: Düsseldorf, contact: Olivia Grant, language: en,
+  payment_terms_days: 45}
+- {name: Pixelwerk Elektronik GmbH, street: Lötstraße 15, post_code: '90429', city: Nürnberg, contact: Murat Aksoy, language: de,
+  payment_terms_days: 30}
+- {name: Kabelhaus Seidl KG, street: Gewerbering 6, post_code: '84034', city: Landshut, contact: Franziska Seidl, language: de,
+  payment_terms_days: 20}
+- {name: Kranichfeld Handelskontor GmbH, street: Speicherweg 7, post_code: '28195', city: Bremen, contact: Jana Oltmanns,
+  language: de, payment_terms_days: 30, shared: true}
+products:
+- {name: Smartphone Aria X12 128 GB, category: Mobil, unit: C62, vat: 19, price: 389.0, supplier: 0, serial: true}
+- {name: Tablet Aria T10 64 GB, category: Mobil, unit: C62, vat: 19, price: 219.0, supplier: 0, serial: true}
+- {name: Notebook Lumen L14 16 GB, category: Computer, unit: C62, vat: 19, price: 649.0, supplier: 1, serial: true}
+- {name: Monitor Lumen 27 Zoll QHD, category: Computer, unit: C62, vat: 19, price: 229.0, supplier: 1, serial: true}
+- {name: SSD 1 TB NVMe, category: Komponenten, unit: C62, vat: 19, price: 64.5, supplier: 1, serial: true}
+- {name: WLAN-Router Mesh AX3000, category: Netzwerk, unit: C62, vat: 19, price: 119.0, supplier: 2, serial: true}
+- {name: Smartwatch Pulse 2, category: Wearables, unit: C62, vat: 19, price: 149.0, supplier: 2, serial: true}
+- {name: Bluetooth-Kopfhörer ANC, category: Audio, unit: C62, vat: 19, price: 79.9, supplier: 2, serial: true}
+- {name: Powerbank 20000 mAh, category: Zubehör, unit: C62, vat: 19, price: 24.9, supplier: 2}
+- {name: USB-C-Ladegerät 65 W, category: Zubehör, unit: C62, vat: 19, price: 19.9, supplier: 3}
+- {name: HDMI-Kabel 2 m, category: Kabel, unit: C62, vat: 19, price: 4.2, supplier: 3}
+- {name: USB-C-Kabel 1 m 10er-Pack, category: Kabel, unit: XCT, vat: 19, price: 29.0, supplier: 3, pack_size: 10}
+- {name: Funktastatur DE-Layout, category: Eingabegeräte, unit: C62, vat: 19, price: 27.5, supplier: 4}
+- {name: Funkmaus ergonomisch, category: Eingabegeräte, unit: C62, vat: 19, price: 18.9, supplier: 4}

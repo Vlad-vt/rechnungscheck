@@ -1,0 +1,37 @@
+# Seed for the synthetic data generator (datagen). Demo tenants only: a real tenant
+# brings its own master data. All names, people and streets are fictitious.
+# `supplier` is the index into `suppliers`; units are UN/ECE codes (C62 piece, KGM kg, XCT carton).
+buyer: {name: Frischemarkt Handels GmbH, street: Marktplatz 1, post_code: '30159', city: Hannover}
+contract_terms: {price_change_notice_days: 30, credit_note_days: 10}
+suppliers:
+- {name: Nordhain Feinkost GmbH, street: Am Kornspeicher 12, post_code: '24103', city: Kiel, contact: Malte Brodersen, language: de,
+  payment_terms_days: 30}
+- {name: Moorwiesen Molkerei eG, street: Deichstraße 4, post_code: '26655', city: Westerstede, contact: Silke Janßen, language: de,
+  payment_terms_days: 14}
+- {name: Talbach Obst & Gemüse KG, street: Auenring 31, post_code: '79539', city: Lörrach, contact: Ercan Yildiz, language: de,
+  payment_terms_days: 10}
+- {name: Lindengrund Getränke GmbH, street: Quellenweg 2, post_code: '34117', city: Kassel, contact: Petra Gessler, language: de,
+  payment_terms_days: 30}
+- {name: Haselrode Backwaren GmbH, street: Mühlenkamp 9, post_code: '49074', city: Osnabrück, contact: Tobias Rehm, language: de,
+  payment_terms_days: 7}
+- {name: Kranichfeld Handelskontor GmbH, street: Speicherweg 7, post_code: '28195', city: Bremen, contact: Jana Oltmanns,
+  language: de, payment_terms_days: 30, shared: true}
+products:
+- {name: Äpfel Elstar lose, category: Obst, unit: KGM, vat: 7, price: 1.89, supplier: 2, batch: true, shelf_life_days: 30}
+- {name: Bananen Fairtrade lose, category: Obst, unit: KGM, vat: 7, price: 1.29, supplier: 2, batch: true, shelf_life_days: 10}
+- {name: Tomaten Rispen lose, category: Gemüse, unit: KGM, vat: 7, price: 2.49, supplier: 2, batch: true, shelf_life_days: 12}
+- {name: Gouda jung am Stück, category: Käse, unit: KGM, vat: 7, price: 7.9, supplier: 1, batch: true, shelf_life_days: 60}
+- {name: 'Vollmilch 3,5 % 1 l', category: Molkerei, unit: C62, vat: 7, price: 0.89, supplier: 1, batch: true, shelf_life_days: 12}
+- {name: Naturjoghurt 500 g, category: Molkerei, unit: C62, vat: 7, price: 0.79, supplier: 1, batch: true, shelf_life_days: 25}
+- {name: Süßrahmbutter 250 g, category: Molkerei, unit: C62, vat: 7, price: 1.69, supplier: 1, batch: true, shelf_life_days: 60}
+- {name: Mineralwasser still 12 x 1 l, category: Getränke, unit: XCT, vat: 19, price: 4.2, supplier: 3, pack_size: 12, batch: true,
+  shelf_life_days: 365}
+- {name: Apfelsaft naturtrüb 6 x 1 l, category: Getränke, unit: XCT, vat: 19, price: 6.9, supplier: 3, pack_size: 6, batch: true,
+  shelf_life_days: 365}
+- {name: Roggenbrot 750 g, category: Backwaren, unit: C62, vat: 7, price: 1.95, supplier: 4, batch: true, shelf_life_days: 6}
+- {name: Vollkornbrötchen, category: Backwaren, unit: C62, vat: 7, price: 0.32, supplier: 4, batch: true, shelf_life_days: 3}
+- {name: Freilandeier 10 Stück, category: Eier, unit: C62, vat: 7, price: 2.59, supplier: 0, batch: true, shelf_life_days: 28}
+- {name: Kaffee gemahlen 500 g, category: Kolonialwaren, unit: C62, vat: 7, price: 4.99, supplier: 0, batch: true, shelf_life_days: 540}
+- {name: Zartbitterschokolade 100 g, category: Süßwaren, unit: C62, vat: 7, price: 0.95, supplier: 0, batch: true, shelf_life_days: 365}
+- {name: Küchenrolle 4 Rollen, category: Haushalt, unit: C62, vat: 19, price: 2.1, supplier: 5}
+- {name: Spülmittel 500 ml, category: Haushalt, unit: C62, vat: 19, price: 0.85, supplier: 5}
