@@ -17,7 +17,7 @@ tenants/<tenant_id>/
 2. Edit `config.yaml`. Print the full schema with `uv run rechnungscheck tenants schema`.
 3. Run `uv run rechnungscheck tenants validate` (CI runs the same command).
 4. Demo tenant: write `datagen.yaml` (schema: `datagen.catalog.TenantSeed`; exactly one supplier is
-   `shared: true`, the cross-tenant probe supplier), then `make data`. This writes `master_data/`,
+   `shared: true`, the cross-tenant probe supplier), then `make data` (runs in the pinned container; needs Docker). This writes `master_data/`,
    `contracts/` and `evals/` and renders the documents into `data/generated/<tenant_id>/`.
    A real tenant instead supplies `master_data/` and `contracts/` directly.
 

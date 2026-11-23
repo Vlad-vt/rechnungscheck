@@ -47,5 +47,12 @@ Everything later in the project is measured against generated data: extraction a
   - duplicates exist in the invoice history;
   - changed IBANs differ from master data;
   - the split is balanced per scenario.
-- Cross-platform reproducibility was measured: in CI run 45143922275 (Linux, commit f1f52bc) all 483 documents matched the SHA-256 list produced on Windows. CI now fails if any committed manifest or document hash differs from the generator output. A future library upgrade that changes bytes shows up as a CI failure and needs `make data` plus a commit.
+- **Cross-platform bytes were measured, and an earlier claim was corrected.**
+  - An earlier version of this ADR said all 483 documents were byte-identical between Windows and Linux. That was wrong: the CI step had compared regenerated files against a hash list the same generation had just rewritten.
+  - The blocking check in CI run 45144149063 (commit 18c93e7) showed the real picture:
+    - all 102 XML files are identical;
+    - all 333 PDFs and 48 PNGs differ between a Windows host and a Linux runner, because the zlib, libpng and pdfium builds differ.
+  - **Fix:** the canonical dataset is rendered in a digest-pinned container (`datagen/Dockerfile`, `make data`). Locally on Windows, two container runs produced identical bytes for all 535 tenant and document files.
+  - CI regenerates in the same image and fails on any difference in manifests or document hashes. There are no exceptions per file type.
+  - `make data-native` (host Python) is faster, but its PDF/PNG bytes are not canonical and must not be committed.
 - The scenario name is the generator recipe. The labels are the truth. For example, a "within tolerance" recipe for a zero-tolerance tenant yields an out-of-tolerance label.

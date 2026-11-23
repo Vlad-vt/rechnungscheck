@@ -13,7 +13,7 @@ define newline
 endef
 
 .PHONY: help install fmt lint typecheck test validate-tenants bicep iac-scan secrets audit check
-.PHONY: up down data data-verify corpus test-integration docker-build compare-validators
+.PHONY: up down data data-verify data-native corpus test-integration docker-build compare-validators
 
 help: ## List targets
 	@uv run --quiet python scripts/make_help.py Makefile
@@ -62,11 +62,14 @@ up: ## Start Postgres, Azurite and the KoSIT validator (Docker Compose)
 down: ## Stop the local stack (keeps volumes)
 	docker compose down
 
-data: ## Generate master data, contracts, case manifests and documents (data/generated)
-	uv run python -m datagen generate
+data: ## Generate the dataset in the pinned container (canonical bytes; needs Docker)
+	uv run python scripts/datagen_docker.py generate
 
-data-verify: ## Check rendered documents against the committed SHA-256 lists
-	uv run python -m datagen verify
+data-verify: ## Check rendered documents against the committed SHA-256 lists (in the container)
+	uv run python scripts/datagen_docker.py verify
+
+data-native: ## Generate with the host Python (fast; PDF/PNG bytes are NOT canonical, never commit them)
+	uv run python -m datagen generate
 
 corpus: ## Fetch the public ZUGFeRD corpus at the pinned commit into data/corpus
 	uv run python scripts/fetch_corpus.py

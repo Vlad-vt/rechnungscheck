@@ -52,7 +52,7 @@ make install            uv sync --locked + pre-commit hooks
 make check              everything CI runs (lint, mypy, tests, tenants, bicep, checkov, gitleaks, pip-audit)
 make test               unit tests only (markers: integration = needs Docker Compose, cloud = needs Azure)
 make up / make down     local stack: Postgres (pgvector), Azurite, KoSIT validator on 127.0.0.1:8081
-make data               regenerate data/generated + committed manifests; `make data-verify` checks SHA-256
+make data               regenerate the dataset in the pinned container (canonical); `make data-verify` checks SHA-256
 make test-integration   tests against the local stack
 make corpus && make compare-validators   ADR 0003 measurement (Mustang run takes ~10 min)
 uv run rechnungscheck tenants validate
@@ -68,7 +68,7 @@ uv run rechnungscheck tenants schema
 - Each canonical invoice field carries its EN 16931 business term id in `json_schema_extra={"bt": ...}`; extensions use `"EXT"`.
 - Prefer small, explainable designs. Every significant decision gets an ADR in `docs/adr/NNNN-title.md` with alternatives and the measurement behind it.
 - The generator's oracle (`datagen/labels.py`) must never import product decision code (`policy/`): evals compare the product against an independent implementation.
-- Committed dataset files and document SHA-256 must equal generator output (byte-identical on Windows and Linux, measured); CI regenerates and fails on any diff. Change the generator, then run `make data` and commit both.
+- Committed dataset files and document SHA-256 must equal the output of `make data`, which renders in the digest-pinned `datagen/Dockerfile` image (host renders differ for PDF/PNG between OSes; measured). CI regenerates in the same image and fails on any diff. Never commit output of `make data-native`. Change the generator, then run `make data` and commit both.
 - Refactors of the generator are proven by a full SHA-256 comparison of `tenants/` and `data/generated/` before and after.
 - Every eval/comparison result records the git commit and whether the tree was dirty at the START of the run.
 - Verify library APIs against current docs or installed source before using them; the LangChain/LangGraph/Foundry ecosystem changes fast. Do not trust memory for model names, API versions or SDK signatures.

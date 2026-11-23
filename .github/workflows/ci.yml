@@ -45,11 +45,11 @@ jobs:
         run: uv run pytest -m "not integration and not cloud"
       - name: Validate tenant configs
         run: uv run rechnungscheck tenants validate
-      - name: Committed dataset matches the generator (manifests and document SHA-256)
+      - name: Committed dataset matches the generator (pinned container, every byte)
         run: |
-          uv run python -m datagen generate
+          uv run python scripts/datagen_docker.py generate
           git diff --exit-code --stat -- tenants
-          uv run python -m datagen verify
+          uv run python scripts/datagen_docker.py verify
 
   containers:
     name: validator images, local stack integration tests

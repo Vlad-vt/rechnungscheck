@@ -53,6 +53,8 @@ For each component: what it does, why it was chosen, alternatives, trade-offs, m
   - The seed lives in `tenants/<id>/datagen.yaml`, so a new demo tenant needs no code change.
 - **Reproducibility:**
   - Output is byte-identical across runs: reportlab invariant mode, an ICC profile with a fixed date, factur-x's clock pinned to the invoice date, PNG instead of JPEG.
+  - Across operating systems, XML matched but every PDF and PNG differed, because the zlib, libpng and pdfium builds differ. The canonical dataset is therefore rendered in a digest-pinned container, and CI checks every byte.
+  - Worth telling: I first wrongly concluded "byte-identical across OSes". The verify step compared files against a hash list the same run had just rewritten. Making the check blocking exposed the mistake, and the fix was the pinned container, not a weaker check.
   - The SHA-256 of all 483 documents is committed.
   - Moving the seed from code to YAML was proven by a before/after SHA-256 comparison of all 535 tenant and document files.
 - **Lessons:**
