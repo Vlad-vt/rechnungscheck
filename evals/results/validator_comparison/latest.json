@@ -1,0 +1,6296 @@
+{
+  "run_at": "2026-11-23T09:04:17+00:00",
+  "repo_commit": "8bd6ee6ad417e378ea5d38c51b378ea0b828c2f0",
+  "repo_dirty": false,
+  "corpus_commit": "02d4b5684738cb2d9faac2cec6599dc0e86c16d5",
+  "validators": {
+    "kosit": "1.6.3 + xrechnung-3.0.2 config 2026-08-31",
+    "mustang": "2.26.0 (CLI, veraPDF)"
+  },
+  "subsets": {
+    "corpus:XML-Rechnung/CII": {
+      "expected_invalid": 0,
+      "kosit": {
+        "files": 27,
+        "supported": 27,
+        "agreement": 0.7778,
+        "false_accept": 0,
+        "false_reject": 6,
+        "unsupported_or_error": 0,
+        "median_ms": 24.5
+      },
+      "mustang": {
+        "files": 27,
+        "supported": 27,
+        "agreement": 0.9259,
+        "false_accept": 0,
+        "false_reject": 2,
+        "unsupported_or_error": 0,
+        "median_ms": 4666.0
+      },
+      "mustang_xml_part": {
+        "files": 27,
+        "supported": 27,
+        "agreement": 0.9259,
+        "false_accept": 0,
+        "false_reject": 2,
+        "unsupported_or_error": 0,
+        "median_ms": 4666.0
+      },
+      "mustang_pdf_and_xml": {
+        "files": 27,
+        "supported": 27,
+        "agreement": 0.9259,
+        "false_accept": 0,
+        "false_reject": 2,
+        "unsupported_or_error": 0,
+        "median_ms": 4666.0
+      }
+    },
+    "corpus:XML-Rechnung/FX": {
+      "expected_invalid": 0,
+      "kosit": {
+        "files": 26,
+        "supported": 22,
+        "agreement": 0.9091,
+        "false_accept": 0,
+        "false_reject": 2,
+        "unsupported_or_error": 4,
+        "median_ms": 6.4
+      },
+      "mustang": {
+        "files": 26,
+        "supported": 26,
+        "agreement": 0.9231,
+        "false_accept": 0,
+        "false_reject": 2,
+        "unsupported_or_error": 0,
+        "median_ms": 7990.0
+      },
+      "mustang_xml_part": {
+        "files": 26,
+        "supported": 26,
+        "agreement": 0.9231,
+        "false_accept": 0,
+        "false_reject": 2,
+        "unsupported_or_error": 0,
+        "median_ms": 7990.0
+      },
+      "mustang_pdf_and_xml": {
+        "files": 26,
+        "supported": 26,
+        "agreement": 0.9231,
+        "false_accept": 0,
+        "false_reject": 2,
+        "unsupported_or_error": 0,
+        "median_ms": 7990.0
+      }
+    },
+    "corpus:XML-Rechnung/UBL": {
+      "expected_invalid": 0,
+      "kosit": {
+        "files": 28,
+        "supported": 5,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 23,
+        "median_ms": 31.0
+      },
+      "mustang": {
+        "files": 28,
+        "supported": 28,
+        "agreement": 0.8571,
+        "false_accept": 0,
+        "false_reject": 4,
+        "unsupported_or_error": 0,
+        "median_ms": 5507.0
+      },
+      "mustang_xml_part": {
+        "files": 28,
+        "supported": 28,
+        "agreement": 0.8571,
+        "false_accept": 0,
+        "false_reject": 4,
+        "unsupported_or_error": 0,
+        "median_ms": 5507.0
+      },
+      "mustang_pdf_and_xml": {
+        "files": 28,
+        "supported": 28,
+        "agreement": 0.8571,
+        "false_accept": 0,
+        "false_reject": 4,
+        "unsupported_or_error": 0,
+        "median_ms": 5507.0
+      }
+    },
+    "corpus:ZUGFeRDv1/correct": {
+      "expected_invalid": 0,
+      "kosit": {
+        "files": 21,
+        "supported": 0,
+        "agreement": null,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 21,
+        "median_ms": null
+      },
+      "mustang": {
+        "files": 21,
+        "supported": 21,
+        "agreement": 0.7619,
+        "false_accept": 0,
+        "false_reject": 5,
+        "unsupported_or_error": 0,
+        "median_ms": 14765.0
+      },
+      "mustang_xml_part": {
+        "files": 21,
+        "supported": 21,
+        "agreement": 0.7619,
+        "false_accept": 0,
+        "false_reject": 5,
+        "unsupported_or_error": 0,
+        "median_ms": 14765.0
+      },
+      "mustang_pdf_and_xml": {
+        "files": 21,
+        "supported": 21,
+        "agreement": 0.7143,
+        "false_accept": 0,
+        "false_reject": 6,
+        "unsupported_or_error": 0,
+        "median_ms": 14765.0
+      }
+    },
+    "corpus:ZUGFeRDv1/fail": {
+      "expected_invalid": 3,
+      "kosit": {
+        "files": 3,
+        "supported": 0,
+        "agreement": null,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 3,
+        "median_ms": null
+      },
+      "mustang": {
+        "files": 3,
+        "supported": 3,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 15228.0
+      },
+      "mustang_xml_part": {
+        "files": 3,
+        "supported": 3,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 15228.0
+      },
+      "mustang_pdf_and_xml": {
+        "files": 3,
+        "supported": 3,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 15228.0
+      }
+    },
+    "corpus:ZUGFeRDv2/correct": {
+      "expected_invalid": 0,
+      "kosit": {
+        "files": 92,
+        "supported": 55,
+        "agreement": 0.8909,
+        "false_accept": 0,
+        "false_reject": 6,
+        "unsupported_or_error": 37,
+        "median_ms": 23.4
+      },
+      "mustang": {
+        "files": 92,
+        "supported": 92,
+        "agreement": 0.7826,
+        "false_accept": 0,
+        "false_reject": 20,
+        "unsupported_or_error": 0,
+        "median_ms": 7602.0
+      },
+      "mustang_xml_part": {
+        "files": 92,
+        "supported": 92,
+        "agreement": 0.7826,
+        "false_accept": 0,
+        "false_reject": 20,
+        "unsupported_or_error": 0,
+        "median_ms": 7602.0
+      },
+      "mustang_pdf_and_xml": {
+        "files": 92,
+        "supported": 92,
+        "agreement": 0.7717,
+        "false_accept": 0,
+        "false_reject": 21,
+        "unsupported_or_error": 0,
+        "median_ms": 7602.0
+      }
+    },
+    "corpus:ZUGFeRDv2/fail": {
+      "expected_invalid": 24,
+      "kosit": {
+        "files": 24,
+        "supported": 12,
+        "agreement": 0.75,
+        "false_accept": 3,
+        "false_reject": 0,
+        "unsupported_or_error": 12,
+        "median_ms": 11.4
+      },
+      "mustang": {
+        "files": 24,
+        "supported": 24,
+        "agreement": 0.7083,
+        "false_accept": 7,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 7491.0
+      },
+      "mustang_xml_part": {
+        "files": 24,
+        "supported": 23,
+        "agreement": 0.6957,
+        "false_accept": 7,
+        "false_reject": 0,
+        "unsupported_or_error": 1,
+        "median_ms": 7508.0
+      },
+      "mustang_pdf_and_xml": {
+        "files": 24,
+        "supported": 24,
+        "agreement": 0.75,
+        "false_accept": 6,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 7491.0
+      }
+    },
+    "generated:xrechnung_cii": {
+      "expected_invalid": 2,
+      "kosit": {
+        "files": 50,
+        "supported": 50,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 7.5
+      },
+      "mustang": {
+        "files": 50,
+        "supported": 50,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 5146.0
+      },
+      "mustang_xml_part": {
+        "files": 50,
+        "supported": 50,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 5146.0
+      },
+      "mustang_pdf_and_xml": {
+        "files": 50,
+        "supported": 50,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 5146.0
+      }
+    },
+    "generated:xrechnung_ubl": {
+      "expected_invalid": 0,
+      "kosit": {
+        "files": 52,
+        "supported": 52,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 7.8
+      },
+      "mustang": {
+        "files": 52,
+        "supported": 52,
+        "agreement": 0.9808,
+        "false_accept": 0,
+        "false_reject": 1,
+        "unsupported_or_error": 0,
+        "median_ms": 6014.0
+      },
+      "mustang_xml_part": {
+        "files": 52,
+        "supported": 52,
+        "agreement": 0.9808,
+        "false_accept": 0,
+        "false_reject": 1,
+        "unsupported_or_error": 0,
+        "median_ms": 6014.0
+      },
+      "mustang_pdf_and_xml": {
+        "files": 52,
+        "supported": 52,
+        "agreement": 0.9808,
+        "false_accept": 0,
+        "false_reject": 1,
+        "unsupported_or_error": 0,
+        "median_ms": 6014.0
+      }
+    },
+    "generated:zugferd": {
+      "expected_invalid": 0,
+      "kosit": {
+        "files": 66,
+        "supported": 66,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 6.0
+      },
+      "mustang": {
+        "files": 66,
+        "supported": 66,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 7183.5
+      },
+      "mustang_xml_part": {
+        "files": 66,
+        "supported": 66,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 7183.5
+      },
+      "mustang_pdf_and_xml": {
+        "files": 66,
+        "supported": 66,
+        "agreement": 1.0,
+        "false_accept": 0,
+        "false_reject": 0,
+        "unsupported_or_error": 0,
+        "median_ms": 7183.5
+      }
+    }
+  },
+  "generated_rejections_by_label": {
+    "arithmetic_error:lines[].line_net_amount": {
+      "n": 7,
+      "kosit_reject": 0,
+      "mustang_reject": 1
+    },
+    "arithmetic_error:totals.total_with_vat": {
+      "n": 2,
+      "kosit_reject": 2,
+      "mustang_reject": 2
+    },
+    "changed_iban:payment.iban": {
+      "n": 10,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "clean": {
+      "n": 33,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "duplicate_invoice": {
+      "n": 9,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "expired_batch:lines[].best_before_date": {
+      "n": 3,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "extra_line": {
+      "n": 7,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "missing_line": {
+      "n": 7,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "missing_mandatory_field:buyer_reference": {
+      "n": 2,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "missing_mandatory_field:lines[].batch_number": {
+      "n": 3,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "missing_mandatory_field:lines[].serial_numbers": {
+      "n": 4,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "missing_mandatory_field:order_reference": {
+      "n": 2,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "no_goods_receipt": {
+      "n": 6,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "over_delivery": {
+      "n": 7,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "price_deviation": {
+      "n": 21,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "rounding": {
+      "n": 8,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "short_delivery": {
+      "n": 20,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "short_shelf_life:lines[].best_before_date": {
+      "n": 4,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "unit_mismatch:lines[].quantity": {
+      "n": 2,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "unit_mismatch:lines[].unit_code": {
+      "n": 6,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    },
+    "wrong_vat_rate:lines[].vat_rate": {
+      "n": 8,
+      "kosit_reject": 0,
+      "mustang_reject": 0
+    }
+  },
+  "items": [
+    {
+      "idx": 0,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/4s4u/additional-data-sample-1.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 147.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 15730.0
+    },
+    {
+      "idx": 1,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_BASIC_Einfach.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 32.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 14548.0
+    },
+    {
+      "idx": 2,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_BASIC_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 38.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 14580.0
+    },
+    {
+      "idx": 3,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_COMFORT_Einfach.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 41.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 14697.0
+    },
+    {
+      "idx": 4,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_COMFORT_Haftpflichtversicherung_Versicherungssteuer.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 36.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 14515.0
+    },
+    {
+      "idx": 5,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_COMFORT_Kraftfahrversicherung_Bruttopreise.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 15.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 14468.0
+    },
+    {
+      "idx": 6,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_COMFORT_Rabatte.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 19.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 15361.0
+    },
+    {
+      "idx": 7,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_COMFORT_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 32.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 14765.0
+    },
+    {
+      "idx": 8,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_COMFORT_Sachversicherung_berechneter_Steuersatz.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 23.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 14306.0
+    },
+    {
+      "idx": 9,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_COMFORT_SEPA_Prenotification.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 35.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 15197.0
+    },
+    {
+      "idx": 10,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_EXTENDED_Kostenrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 17.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 15956.0
+    },
+    {
+      "idx": 11,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_EXTENDED_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 20.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 15644.0
+    },
+    {
+      "idx": 12,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Intarsys/ZUGFeRD_1p0_EXTENDED_Warenrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 28.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 16833.0
+    },
+    {
+      "idx": 13,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Konik/acme_invoice-42_ZUGFeRD.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 22.4,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 14345.0
+    },
+    {
+      "idx": 14,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Mustangproject/MustangGnuaccountingBeispielRE-20140519_499.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 23.8,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 9894.0
+    },
+    {
+      "idx": 15,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Mustangproject/MustangGnuaccountingBeispielRE-20140522_501.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 22.4,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 9810.0
+    },
+    {
+      "idx": 16,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Mustangproject/MustangGnuaccountingBeispielRE-20140703_502.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 9.8,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 15021.0
+    },
+    {
+      "idx": 17,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Mustangproject/MustangGnuaccountingBeispielRE-20150613_503.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 8.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 14574.0
+    },
+    {
+      "idx": 18,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Mustangproject/MustangGnuaccountingBeispielRE-20151008_504.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 20.2,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 15315.0
+    },
+    {
+      "idx": 19,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Mustangproject/MustangGnuaccountingBeispielRE-20151008_504new.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 19.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 15426.0
+    },
+    {
+      "idx": 20,
+      "subset": "corpus:ZUGFeRDv1/correct",
+      "path": "corpus/ZUGFeRDv1/correct/Mustangproject/MustangGnuaccountingBeispielRE-20170509_505.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 22.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 14993.0
+    },
+    {
+      "idx": 21,
+      "subset": "corpus:ZUGFeRDv1/fail",
+      "path": "corpus/ZUGFeRDv1/fail/Mustangproject/fail1.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 18.2,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 15590.0
+    },
+    {
+      "idx": 22,
+      "subset": "corpus:ZUGFeRDv1/fail",
+      "path": "corpus/ZUGFeRDv1/fail/Mustangproject/fail2.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 5.8,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 15018.0
+    },
+    {
+      "idx": 23,
+      "subset": "corpus:ZUGFeRDv1/fail",
+      "path": "corpus/ZUGFeRDv1/fail/Mustangproject/fail3.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 7.7,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 15228.0
+    },
+    {
+      "idx": 24,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/FNFE-factur-x-examples/Avoir_FR_type381_BASIC.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 5.9,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 9490.0
+    },
+    {
+      "idx": 25,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/FNFE-factur-x-examples/Facture_DOM_BASICWL.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 6.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6961.0
+    },
+    {
+      "idx": 26,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/FNFE-factur-x-examples/Facture_DOM_MINIMUM.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 24.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6498.0
+    },
+    {
+      "idx": 27,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/FNFE-factur-x-examples/Facture_FR_BASICWL.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 27.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8132.0
+    },
+    {
+      "idx": 28,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/FNFE-factur-x-examples/Facture_FR_MINIMUM.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 24.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7636.0
+    },
+    {
+      "idx": 29,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/FNFE-factur-x-examples/Facture_UE_BASICWL.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 28.6,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7602.0
+    },
+    {
+      "idx": 30,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/FNFE-factur-x-examples/Facture_UE_MINIMUM.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 8.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6364.0
+    },
+    {
+      "idx": 31,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/BASIC/zugferd_2p0_BASIC_Einfach.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 9.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7475.0
+    },
+    {
+      "idx": 32,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/BASIC/zugferd_2p0_BASIC_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 20.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7980.0
+    },
+    {
+      "idx": 33,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/BASIC/zugferd_2p0_BASIC_Taxifahrt.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 25.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7035.0
+    },
+    {
+      "idx": 34,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_1_Teilrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 92.5,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7661.0
+    },
+    {
+      "idx": 35,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_2_Teilrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 37.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6819.0
+    },
+    {
+      "idx": 36,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_AbweichenderZahlungsempf.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 22.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7016.0
+    },
+    {
+      "idx": 37,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Betriebskostenabrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 21.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6690.0
+    },
+    {
+      "idx": 38,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Einfach.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 23.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7406.0
+    },
+    {
+      "idx": 39,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Elektron.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 40.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6829.0
+    },
+    {
+      "idx": 40,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_ElektronischeAdresse.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 34.9,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7557.0
+    },
+    {
+      "idx": 41,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Gutschrift.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 30.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7170.0
+    },
+    {
+      "idx": 42,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Haftpflichtversicherung_Versicherungssteuer.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 17.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7456.0
+    },
+    {
+      "idx": 43,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Innergemeinschaftliche_Lieferungen.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 31.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7629.0
+    },
+    {
+      "idx": 44,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Kraftfahrversicherung_Bruttopreise.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 31.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7454.0
+    },
+    {
+      "idx": 45,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Miete.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 33.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7951.0
+    },
+    {
+      "idx": 46,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_OEPNV.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 13.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6964.0
+    },
+    {
+      "idx": 47,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Physiotherapeut.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 28.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6855.0
+    },
+    {
+      "idx": 48,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Rabatte.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 44.0,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7784.0
+    },
+    {
+      "idx": 49,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 15.6,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7355.0
+    },
+    {
+      "idx": 50,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_RechnungsUebertragung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 29.3,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7500.0
+    },
+    {
+      "idx": 51,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Reisekostenabrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 35.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 6940.0
+    },
+    {
+      "idx": 52,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Sachversicherung_berechneter_Steuersatz.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 28.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7308.0
+    },
+    {
+      "idx": 53,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_SEPA_Prenotification.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 28.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6794.0
+    },
+    {
+      "idx": 54,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EXTENDED/zugferd_2p0_EXTENDED_Fremdwaehrung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 21.2,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 9184.0
+    },
+    {
+      "idx": 55,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EXTENDED/zugferd_2p0_EXTENDED_InnergemeinschLieferungMehrereBestellungen.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 19.1,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 9720.0
+    },
+    {
+      "idx": 56,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EXTENDED/zugferd_2p0_EXTENDED_Kostenrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 9.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 10280.0
+    },
+    {
+      "idx": 57,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EXTENDED/zugferd_2p0_EXTENDED_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 16.6,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 10329.0
+    },
+    {
+      "idx": 58,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/EXTENDED/zugferd_2p0_EXTENDED_Warenrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 27.5,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 9812.0
+    },
+    {
+      "idx": 59,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/intarsys/MINIMUM/zugferd_2p0_MINIMUM.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 18.4,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 6710.0
+    },
+    {
+      "idx": 60,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/EXTENDED_comprehensive.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 32.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 8359.0
+    },
+    {
+      "idx": 61,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/hate1.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 11.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5683.0
+    },
+    {
+      "idx": 62,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/MustangGnuaccountingBeispielRE-20190610_507.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 31.6,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7927.0
+    },
+    {
+      "idx": 63,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/MustangGnuaccountingBeispielRE-20201121_508.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 12.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7826.0
+    },
+    {
+      "idx": 64,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/MustangGnuaccountingBeispielRE-20201121_508_withBOM.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 28.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7433.0
+    },
+    {
+      "idx": 65,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-XR-Edge.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 5.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4429.0
+    },
+    {
+      "idx": 66,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-XR.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 15.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4926.0
+    },
+    {
+      "idx": 67,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-ZF2PushAllowances.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 12.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4332.0
+    },
+    {
+      "idx": 68,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-ZF2PushChargesAllowances.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 28.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4899.0
+    },
+    {
+      "idx": 69,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-ZF2PushCorrection.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 25.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4614.0
+    },
+    {
+      "idx": 70,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-ZF2PushCreditNote.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 26.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4739.0
+    },
+    {
+      "idx": 71,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-ZF2PushEdge.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 26.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4829.0
+    },
+    {
+      "idx": 72,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-ZF2PushItemChargesAllowances.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 15.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6196.0
+    },
+    {
+      "idx": 73,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-ZF2PushRelativeChargesAllowances.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 19.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6611.0
+    },
+    {
+      "idx": 74,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/Mustangproject/testout-ZF2PushReverseCharge.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6465.0
+    },
+    {
+      "idx": 75,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/PHP_@gpFacturX/sample_inofficial_20190125_atgp_factur-x_v_1_0.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 11.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8771.0
+    },
+    {
+      "idx": 76,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/BASIC/zugferd_2p1_BASIC_Einfach.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 20.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8453.0
+    },
+    {
+      "idx": 77,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/BASIC/zugferd_2p1_BASIC_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8543.0
+    },
+    {
+      "idx": 78,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/BASIC/zugferd_2p1_BASIC_Taxifahrt.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7864.0
+    },
+    {
+      "idx": 79,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/BASIC WL/zugferd_2p1_BASIC-WL_Buchungshilfe.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6825.0
+    },
+    {
+      "idx": 80,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/BASIC WL/zugferd_2p1_BASIC-WL_Einfach.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6509.0
+    },
+    {
+      "idx": 81,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_1_Teilrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 11.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7655.0
+    },
+    {
+      "idx": 82,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_2_Teilrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 7.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7359.0
+    },
+    {
+      "idx": 83,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_AbweichenderZahlungsempf.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 8.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7876.0
+    },
+    {
+      "idx": 84,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Betriebskostenabrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 7.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8219.0
+    },
+    {
+      "idx": 85,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Betriebskostenabrechnung_XRechnung_embedded.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 17.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8471.0
+    },
+    {
+      "idx": 86,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Einfach.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 9.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8181.0
+    },
+    {
+      "idx": 87,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Einfach_DueDate.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 8.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7735.0
+    },
+    {
+      "idx": 88,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Einfach_negativePaymentDue.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 28.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7781.0
+    },
+    {
+      "idx": 89,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Elektron.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 32.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8366.0
+    },
+    {
+      "idx": 90,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Elektron_embedded.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 82.7,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 8904.0
+    },
+    {
+      "idx": 91,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Elektron_XRechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 52.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7704.0
+    },
+    {
+      "idx": 92,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_ElektronischeAdresse.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 35.4,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7713.0
+    },
+    {
+      "idx": 93,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Gutschrift.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 11.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7932.0
+    },
+    {
+      "idx": 94,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Haftpflichtversicherung_Versicherungssteuer.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 24.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7464.0
+    },
+    {
+      "idx": 95,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Innergemeinschaftliche_Lieferungen.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 21.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8004.0
+    },
+    {
+      "idx": 96,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Kraftfahrversicherung_Bruttopreise.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7038.0
+    },
+    {
+      "idx": 97,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Miete.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 10.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8107.0
+    },
+    {
+      "idx": 98,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_OEPNV.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7602.0
+    },
+    {
+      "idx": 99,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Physiotherapeut.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6746.0
+    },
+    {
+      "idx": 100,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Rabatte.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 9.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7893.0
+    },
+    {
+      "idx": 101,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 9.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7220.0
+    },
+    {
+      "idx": 102,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_RechnungsUebertragung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 27.6,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 8312.0
+    },
+    {
+      "idx": 103,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Reisekostenabrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 7.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7990.0
+    },
+    {
+      "idx": 104,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Reisekostenabrechnung_XRechnung_embedded.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 24.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8774.0
+    },
+    {
+      "idx": 105,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_Sachversicherung_berechneter_Steuersatz.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 26.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8009.0
+    },
+    {
+      "idx": 106,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EN16931/zugferd_2p1_EN16931_SEPA_Prenotification.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 23.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7785.0
+    },
+    {
+      "idx": 107,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EXTENDED/zugferd_2p1_EXTENDED_Fremdwaehrung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.4,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 10153.0
+    },
+    {
+      "idx": 108,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EXTENDED/zugferd_2p1_EXTENDED_InnergemeinschLieferungMehrereBestellungen.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.6,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 9717.0
+    },
+    {
+      "idx": 109,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EXTENDED/zugferd_2p1_EXTENDED_Kostenrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 24.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 9917.0
+    },
+    {
+      "idx": 110,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EXTENDED/zugferd_2p1_EXTENDED_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 9649.0
+    },
+    {
+      "idx": 111,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/EXTENDED/zugferd_2p1_EXTENDED_Warenrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 5.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 10694.0
+    },
+    {
+      "idx": 112,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/MINIMUM/zugferd_2p1_MINIMUM_Buchungshilfe.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.3,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7017.0
+    },
+    {
+      "idx": 113,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/symtrax/Beispiele/MINIMUM/zugferd_2p1_MINIMUM_Rechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.4,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 6295.0
+    },
+    {
+      "idx": 114,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/xml/ZUGFeRD-invoice_rabatte_3_abschlag_duepayableamount.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5081.0
+    },
+    {
+      "idx": 115,
+      "subset": "corpus:ZUGFeRDv2/correct",
+      "path": "corpus/ZUGFeRDv2/correct/xml/ZUGFeRD-invoice_rabatte_4_abschlag_taxbasistotalamount.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4472.0
+    },
+    {
+      "idx": 116,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Avoir_FR_type380_BASIC.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.0,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7644.0
+    },
+    {
+      "idx": 117,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Avoir_FR_type380_EN16931.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 14.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7800.0
+    },
+    {
+      "idx": 118,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Avoir_FR_type380_MINIMUM.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.5,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 6753.0
+    },
+    {
+      "idx": 119,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Avoir_FR_type381_BASICWL.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 24.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7265.0
+    },
+    {
+      "idx": 120,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Avoir_FR_type381_EN16931.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 11.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7474.0
+    },
+    {
+      "idx": 121,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Avoir_FR_type381_MINIMUM.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 17.7,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 6560.0
+    },
+    {
+      "idx": 122,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Facture_DOM_BASIC.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 6.6,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7352.0
+    },
+    {
+      "idx": 123,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Facture_DOM_EN16931.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 11.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7751.0
+    },
+    {
+      "idx": 124,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Facture_FR_BASIC.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.7,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 8265.0
+    },
+    {
+      "idx": 125,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Facture_FR_EN16931.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 25.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 9084.0
+    },
+    {
+      "idx": 126,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Facture_UE_BASIC.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 30.5,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7508.0
+    },
+    {
+      "idx": 127,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FNFE-factur-x-examples/Facture_UE_EN16931.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 14.2,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7311.0
+    },
+    {
+      "idx": 128,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/FX-With-UBL-REC50304330.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 33.9,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 8430.0
+    },
+    {
+      "idx": 129,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/Mustangproject/factur-x-invalid-xml-encoding-attribute.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "error",
+      "kosit_ms": 10.8,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7602.0
+    },
+    {
+      "idx": 130,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/Mustangproject/MustangGnuaccountingBeispielRE-20171118_506.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.4,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 9067.0
+    },
+    {
+      "idx": 131,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/Mustangproject/MustangGnuaccountingBeispielRE-20190610_507a.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 9.1,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 8074.0
+    },
+    {
+      "idx": 132,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/Mustangproject/MustangGnuaccountingBeispielRE-20190610_507b.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 6.0,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7079.0
+    },
+    {
+      "idx": 133,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/Mustangproject/noNetPriceValidation.xml",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 8.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4827.0
+    },
+    {
+      "idx": 134,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/Mustangproject/wrongFilename.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": null,
+      "mustang": "reject",
+      "mustang_xml": "n/a",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 3859.0
+    },
+    {
+      "idx": 135,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/MustangRE-20171118_506_ZUGFeRD1and2.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.6,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 8445.0
+    },
+    {
+      "idx": 136,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/python-factur-x/python-factur-x.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.4,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 7238.0
+    },
+    {
+      "idx": 137,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/XRechnung 722825203.XML",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 46.5,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 5426.0
+    },
+    {
+      "idx": 138,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/ZUGFeRD_2.0_fully_compliant_complete.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 9.8,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 7662.0
+    },
+    {
+      "idx": 139,
+      "subset": "corpus:ZUGFeRDv2/fail",
+      "path": "corpus/ZUGFeRDv2/fail/ZUGFeRD_2_fully_compliant_complete.pdf",
+      "expected_valid": false,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 7.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "reject",
+      "mustang_combined": "reject",
+      "mustang_ms": 6734.0
+    },
+    {
+      "idx": 140,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_1_Teilrechnung.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 8.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5312.0
+    },
+    {
+      "idx": 141,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_2_Teilrechnung.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 17.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4885.0
+    },
+    {
+      "idx": 142,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_AbweichenderZahlungsempf.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 33.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4807.0
+    },
+    {
+      "idx": 143,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Betriebskostenabrechnung.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 21.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4613.0
+    },
+    {
+      "idx": 144,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Einfach.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4462.0
+    },
+    {
+      "idx": 145,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Einfach_DueDate.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4235.0
+    },
+    {
+      "idx": 146,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Einfach_negativePaymentDue.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 19.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4333.0
+    },
+    {
+      "idx": 147,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Elektron.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 26.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4523.0
+    },
+    {
+      "idx": 148,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_ElektronischeAdresse.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 8.1,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 4916.0
+    },
+    {
+      "idx": 149,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Gutschrift.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4242.0
+    },
+    {
+      "idx": 150,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Haftpflichtversicherung_Versicherungssteuer.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 3974.0
+    },
+    {
+      "idx": 151,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Innergemeinschaftliche_Lieferungen.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 25.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4479.0
+    },
+    {
+      "idx": 152,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Kraftfahrversicherung_Bruttopreise.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 27.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4303.0
+    },
+    {
+      "idx": 153,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Miete.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 26.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4427.0
+    },
+    {
+      "idx": 154,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_OEPNV.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4350.0
+    },
+    {
+      "idx": 155,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Physiotherapeut.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 30.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 3932.0
+    },
+    {
+      "idx": 156,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Rabatte.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 28.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4783.0
+    },
+    {
+      "idx": 157,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Rechnungskorrektur.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 27.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4666.0
+    },
+    {
+      "idx": 158,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_RechnungsUebertragung.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 28.5,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 4243.0
+    },
+    {
+      "idx": 159,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Reisekostenabrechnung.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 24.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5209.0
+    },
+    {
+      "idx": 160,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_Sachversicherung_berechneter_Steuersatz.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4672.0
+    },
+    {
+      "idx": 161,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/EN16931_SEPA_Prenotification.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4930.0
+    },
+    {
+      "idx": 162,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/not_validating_full_invoice_based_onTest_EeISI_300_CENfullmodel.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 26.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5371.0
+    },
+    {
+      "idx": 163,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/XRECHNUNG_Betriebskostenabrechnung.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 29.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5372.0
+    },
+    {
+      "idx": 164,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/XRECHNUNG_Einfach.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 14.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5835.0
+    },
+    {
+      "idx": 165,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/XRECHNUNG_Elektron.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 41.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6509.0
+    },
+    {
+      "idx": 166,
+      "subset": "corpus:XML-Rechnung/CII",
+      "path": "corpus/XML-Rechnung/CII/XRECHNUNG_Reisekostenabrechnung.cii.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 34.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6432.0
+    },
+    {
+      "idx": 167,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_1_Teilrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 26.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8774.0
+    },
+    {
+      "idx": 168,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_2_Teilrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8172.0
+    },
+    {
+      "idx": 169,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_AbweichenderZahlungsempf.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8241.0
+    },
+    {
+      "idx": 170,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Betriebskostenabrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8259.0
+    },
+    {
+      "idx": 171,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Einfach.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8501.0
+    },
+    {
+      "idx": 172,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Einfach_DueDate.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8516.0
+    },
+    {
+      "idx": 173,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Einfach_negativePaymentDue.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7632.0
+    },
+    {
+      "idx": 174,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Elektron.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 7.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8302.0
+    },
+    {
+      "idx": 175,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_ElektronischeAdresse.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 20.5,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7665.0
+    },
+    {
+      "idx": 176,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Gutschrift.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7941.0
+    },
+    {
+      "idx": 177,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Haftpflichtversicherung_Versicherungssteuer.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7358.0
+    },
+    {
+      "idx": 178,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Innergemeinschaftliche_Lieferungen.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 7.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7982.0
+    },
+    {
+      "idx": 179,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Kraftfahrversicherung_Bruttopreise.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7482.0
+    },
+    {
+      "idx": 180,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Miete.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 7.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7604.0
+    },
+    {
+      "idx": 181,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_OEPNV.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7685.0
+    },
+    {
+      "idx": 182,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Physiotherapeut.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7690.0
+    },
+    {
+      "idx": 183,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Rabatte.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 21.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8296.0
+    },
+    {
+      "idx": 184,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Rechnungskorrektur.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7855.0
+    },
+    {
+      "idx": 185,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_RechnungsUebertragung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "reject",
+      "kosit_ms": 8.0,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "accept",
+      "mustang_combined": "reject",
+      "mustang_ms": 7802.0
+    },
+    {
+      "idx": 186,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Reisekostenabrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 6.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7678.0
+    },
+    {
+      "idx": 187,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_Sachversicherung_berechneter_Steuersatz.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8177.0
+    },
+    {
+      "idx": 188,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/EN16931_SEPA_Prenotification.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 5.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8089.0
+    },
+    {
+      "idx": 189,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/XRECHNUNG_Betriebskostenabrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 31.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7998.0
+    },
+    {
+      "idx": 190,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/XRECHNUNG_Einfach.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7618.0
+    },
+    {
+      "idx": 191,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/XRECHNUNG_Elektron.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 38.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8757.0
+    },
+    {
+      "idx": 192,
+      "subset": "corpus:XML-Rechnung/FX",
+      "path": "corpus/XML-Rechnung/FX/XRECHNUNG_Reisekostenabrechnung.pdf",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 33.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8469.0
+    },
+    {
+      "idx": 193,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_1_Teilrechnung.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 8.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4963.0
+    },
+    {
+      "idx": 194,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_2_Teilrechnung.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5637.0
+    },
+    {
+      "idx": 195,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_AbweichenderZahlungsempf.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5551.0
+    },
+    {
+      "idx": 196,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Betriebskostenabrechnung.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5275.0
+    },
+    {
+      "idx": 197,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Einfach.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5595.0
+    },
+    {
+      "idx": 198,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Einfach_DueDate.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 16.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5227.0
+    },
+    {
+      "idx": 199,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Einfach_negativePaymentDue.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6012.0
+    },
+    {
+      "idx": 200,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Elektron.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5306.0
+    },
+    {
+      "idx": 201,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_ElektronischeAdresse.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 18.0,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 5728.0
+    },
+    {
+      "idx": 202,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Gutschrift.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5398.0
+    },
+    {
+      "idx": 203,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Haftpflichtversicherung_Versicherungssteuer.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5049.0
+    },
+    {
+      "idx": 204,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Innergemeinschaftliche_Lieferungen.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5354.0
+    },
+    {
+      "idx": 205,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Kraftfahrversicherung_Bruttopreise.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 2.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5600.0
+    },
+    {
+      "idx": 206,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Miete.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5665.0
+    },
+    {
+      "idx": 207,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_OEPNV.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 2.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5463.0
+    },
+    {
+      "idx": 208,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Physiotherapeut.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5009.0
+    },
+    {
+      "idx": 209,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Rabatte.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5921.0
+    },
+    {
+      "idx": 210,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Rechnungskorrektur.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 15.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5626.0
+    },
+    {
+      "idx": 211,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_RechnungsUebertragung.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.1,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 5403.0
+    },
+    {
+      "idx": 212,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Reisekostenabrechnung.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 21.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5045.0
+    },
+    {
+      "idx": 213,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_Sachversicherung_berechneter_Steuersatz.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5226.0
+    },
+    {
+      "idx": 214,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/EN16931_SEPA_Prenotification.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 3.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5259.0
+    },
+    {
+      "idx": 215,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/not_validating_full_invoice_based_onTest_EeISI_300_CENfullmodel.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "unsupported",
+      "kosit_ms": 4.1,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 5705.0
+    },
+    {
+      "idx": 216,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/ubl-tc434-creditnote1.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 14.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5010.0
+    },
+    {
+      "idx": 217,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/XRECHNUNG_Betriebskostenabrechnung.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 34.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6219.0
+    },
+    {
+      "idx": 218,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/XRECHNUNG_Einfach.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 8.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6061.0
+    },
+    {
+      "idx": 219,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/XRECHNUNG_Elektron.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 40.9,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 6134.0
+    },
+    {
+      "idx": 220,
+      "subset": "corpus:XML-Rechnung/UBL",
+      "path": "corpus/XML-Rechnung/UBL/XRECHNUNG_Reisekostenabrechnung.ubl.xml",
+      "expected_valid": true,
+      "labels": [],
+      "kosit": "accept",
+      "kosit_ms": 31.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6222.0
+    },
+    {
+      "idx": 221,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0001/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7437.0
+    },
+    {
+      "idx": 222,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0002/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7094.0
+    },
+    {
+      "idx": 223,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0005/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5559.0
+    },
+    {
+      "idx": 224,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0006/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5475.0
+    },
+    {
+      "idx": 225,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0007/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 28.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5191.0
+    },
+    {
+      "idx": 226,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0008/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5369.0
+    },
+    {
+      "idx": 227,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0009/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 32.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6205.0
+    },
+    {
+      "idx": 228,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0010/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 25.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5990.0
+    },
+    {
+      "idx": 229,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0011/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 28.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5721.0
+    },
+    {
+      "idx": 230,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0013/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5696.0
+    },
+    {
+      "idx": 231,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0014/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5844.0
+    },
+    {
+      "idx": 232,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0015/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 19.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6305.0
+    },
+    {
+      "idx": 233,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0017/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7351.0
+    },
+    {
+      "idx": 234,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0023/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6450.0
+    },
+    {
+      "idx": 235,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0024/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 18.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5785.0
+    },
+    {
+      "idx": 236,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0025/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 14.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5473.0
+    },
+    {
+      "idx": 237,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0026/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "over_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5545.0
+    },
+    {
+      "idx": 238,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0027/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "over_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5993.0
+    },
+    {
+      "idx": 239,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0029/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7880.0
+    },
+    {
+      "idx": 240,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0032/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7180.0
+    },
+    {
+      "idx": 241,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0033/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7055.0
+    },
+    {
+      "idx": 242,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0034/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7521.0
+    },
+    {
+      "idx": 243,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0035/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 9.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5200.0
+    },
+    {
+      "idx": 244,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0036/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5554.0
+    },
+    {
+      "idx": 245,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0038/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "wrong_vat_rate:lines[].vat_rate"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 8.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5207.0
+    },
+    {
+      "idx": 246,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0040/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "wrong_vat_rate:lines[].vat_rate"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 18.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7333.0
+    },
+    {
+      "idx": 247,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0041/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "wrong_vat_rate:lines[].vat_rate"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6085.0
+    },
+    {
+      "idx": 248,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0044/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7082.0
+    },
+    {
+      "idx": 249,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0047/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "extra_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5003.0
+    },
+    {
+      "idx": 250,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0048/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "extra_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5022.0
+    },
+    {
+      "idx": 251,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0049/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "duplicate_invoice"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7108.0
+    },
+    {
+      "idx": 252,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0050/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "duplicate_invoice"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 23.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7411.0
+    },
+    {
+      "idx": 253,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0051/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "duplicate_invoice"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7759.0
+    },
+    {
+      "idx": 254,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0053/invoice.xml",
+      "expected_valid": false,
+      "labels": [
+        "arithmetic_error:totals.total_with_vat"
+      ],
+      "kosit": "reject",
+      "kosit_ms": 28.9,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 5768.0
+    },
+    {
+      "idx": 255,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0054/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "arithmetic_error:lines[].line_net_amount"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7416.0
+    },
+    {
+      "idx": 256,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0055/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "arithmetic_error:lines[].line_net_amount"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 11.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4854.0
+    },
+    {
+      "idx": 257,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0056/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "arithmetic_error:lines[].line_net_amount"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7501.0
+    },
+    {
+      "idx": 258,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0057/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:lines[].batch_number"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 8.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5739.0
+    },
+    {
+      "idx": 259,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0058/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:order_reference"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 22.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5958.0
+    },
+    {
+      "idx": 260,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0061/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:lines[].batch_number"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7187.0
+    },
+    {
+      "idx": 261,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0062/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "short_shelf_life:lines[].best_before_date"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7321.0
+    },
+    {
+      "idx": 262,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0063/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "short_shelf_life:lines[].best_before_date"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 15.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7632.0
+    },
+    {
+      "idx": 263,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0064/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_shelf_life:lines[].best_before_date"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 24.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5422.0
+    },
+    {
+      "idx": 264,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0065/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "short_shelf_life:lines[].best_before_date"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 22.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 8005.0
+    },
+    {
+      "idx": 265,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0066/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7758.0
+    },
+    {
+      "idx": 266,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0067/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 20.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6614.0
+    },
+    {
+      "idx": 267,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0069/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7543.0
+    },
+    {
+      "idx": 268,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0070/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "unit_mismatch:lines[].unit_code"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 26.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7291.0
+    },
+    {
+      "idx": 269,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0073/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "unit_mismatch:lines[].quantity"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 26.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5519.0
+    },
+    {
+      "idx": 270,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0075/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "rounding"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 17.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6448.0
+    },
+    {
+      "idx": 271,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0076/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "rounding"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 30.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7021.0
+    },
+    {
+      "idx": 272,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0077/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "rounding"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 22.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5089.0
+    },
+    {
+      "idx": 273,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/drogeriewelt/drogeriewelt-0078/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "no_goods_receipt"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6233.0
+    },
+    {
+      "idx": 274,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0079/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "no_goods_receipt"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5392.0
+    },
+    {
+      "idx": 275,
+      "subset": "generated:zugferd",
+      "path": "generated/drogeriewelt/drogeriewelt-0080/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "no_goods_receipt"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7462.0
+    },
+    {
+      "idx": 276,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/drogeriewelt/drogeriewelt-0082/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation",
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4906.0
+    },
+    {
+      "idx": 277,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0001/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7473.0
+    },
+    {
+      "idx": 278,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0003/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7109.0
+    },
+    {
+      "idx": 279,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0004/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 30.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6452.0
+    },
+    {
+      "idx": 280,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0005/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7344.0
+    },
+    {
+      "idx": 281,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0006/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6265.0
+    },
+    {
+      "idx": 282,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0007/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5684.0
+    },
+    {
+      "idx": 283,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0008/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7393.0
+    },
+    {
+      "idx": 284,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0011/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4995.0
+    },
+    {
+      "idx": 285,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0012/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7295.0
+    },
+    {
+      "idx": 286,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0013/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4967.0
+    },
+    {
+      "idx": 287,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0015/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 19.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4955.0
+    },
+    {
+      "idx": 288,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0017/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 16.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7226.0
+    },
+    {
+      "idx": 289,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0018/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 10.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6122.0
+    },
+    {
+      "idx": 290,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0019/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4844.0
+    },
+    {
+      "idx": 291,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0021/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6130.0
+    },
+    {
+      "idx": 292,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0023/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5560.0
+    },
+    {
+      "idx": 293,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0025/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6032.0
+    },
+    {
+      "idx": 294,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0026/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "over_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7629.0
+    },
+    {
+      "idx": 295,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0027/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "over_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7728.0
+    },
+    {
+      "idx": 296,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0029/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6314.0
+    },
+    {
+      "idx": 297,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0030/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6631.0
+    },
+    {
+      "idx": 298,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0031/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6008.0
+    },
+    {
+      "idx": 299,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0033/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 20.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6134.0
+    },
+    {
+      "idx": 300,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0034/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 22.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7093.0
+    },
+    {
+      "idx": 301,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0035/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 22.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7068.0
+    },
+    {
+      "idx": 302,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0038/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "wrong_vat_rate:lines[].vat_rate"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7072.0
+    },
+    {
+      "idx": 303,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0039/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "wrong_vat_rate:lines[].vat_rate"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6774.0
+    },
+    {
+      "idx": 304,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0040/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "wrong_vat_rate:lines[].vat_rate"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 15.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6125.0
+    },
+    {
+      "idx": 305,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0042/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 21.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7043.0
+    },
+    {
+      "idx": 306,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0043/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "missing_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4774.0
+    },
+    {
+      "idx": 307,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0044/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "missing_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4577.0
+    },
+    {
+      "idx": 308,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0045/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "extra_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 19.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5034.0
+    },
+    {
+      "idx": 309,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0046/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "extra_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4757.0
+    },
+    {
+      "idx": 310,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0048/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "extra_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7399.0
+    },
+    {
+      "idx": 311,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0049/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "duplicate_invoice"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 4.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6620.0
+    },
+    {
+      "idx": 312,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0050/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "duplicate_invoice"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 17.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5506.0
+    },
+    {
+      "idx": 313,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0052/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "duplicate_invoice"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6902.0
+    },
+    {
+      "idx": 314,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0054/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "arithmetic_error:lines[].line_net_amount"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.9,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 6107.0
+    },
+    {
+      "idx": 315,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0055/invoice.xml",
+      "expected_valid": false,
+      "labels": [
+        "arithmetic_error:totals.total_with_vat"
+      ],
+      "kosit": "reject",
+      "kosit_ms": 16.3,
+      "mustang": "reject",
+      "mustang_xml": "reject",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "reject",
+      "mustang_ms": 5152.0
+    },
+    {
+      "idx": 316,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0056/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "arithmetic_error:lines[].line_net_amount"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 4.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6795.0
+    },
+    {
+      "idx": 317,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0058/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:lines[].batch_number"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 9.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6757.0
+    },
+    {
+      "idx": 318,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0059/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:buyer_reference"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7255.0
+    },
+    {
+      "idx": 319,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0061/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:order_reference"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 4.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6740.0
+    },
+    {
+      "idx": 320,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0062/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "expired_batch:lines[].best_before_date"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 16.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5015.0
+    },
+    {
+      "idx": 321,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0064/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "expired_batch:lines[].best_before_date"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6521.0
+    },
+    {
+      "idx": 322,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0065/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "expired_batch:lines[].best_before_date"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 23.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4567.0
+    },
+    {
+      "idx": 323,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0066/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7199.0
+    },
+    {
+      "idx": 324,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0067/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7160.0
+    },
+    {
+      "idx": 325,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0068/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 18.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7542.0
+    },
+    {
+      "idx": 326,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0070/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "unit_mismatch:lines[].unit_code"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6020.0
+    },
+    {
+      "idx": 327,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0072/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "unit_mismatch:lines[].unit_code"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 24.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6108.0
+    },
+    {
+      "idx": 328,
+      "subset": "generated:zugferd",
+      "path": "generated/frischemarkt/frischemarkt-0073/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "unit_mismatch:lines[].quantity"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 4.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6988.0
+    },
+    {
+      "idx": 329,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0075/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "rounding"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 24.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6152.0
+    },
+    {
+      "idx": 330,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0076/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "rounding"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6324.0
+    },
+    {
+      "idx": 331,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/frischemarkt/frischemarkt-0078/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "no_goods_receipt"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5279.0
+    },
+    {
+      "idx": 332,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/frischemarkt/frischemarkt-0081/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation",
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 31.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5439.0
+    },
+    {
+      "idx": 333,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0003/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6592.0
+    },
+    {
+      "idx": 334,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0005/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 4.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6952.0
+    },
+    {
+      "idx": 335,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0006/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4706.0
+    },
+    {
+      "idx": 336,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0008/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6986.0
+    },
+    {
+      "idx": 337,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0009/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6881.0
+    },
+    {
+      "idx": 338,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0010/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6669.0
+    },
+    {
+      "idx": 339,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0011/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 16.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5082.0
+    },
+    {
+      "idx": 340,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0014/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5729.0
+    },
+    {
+      "idx": 341,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0015/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 4.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7447.0
+    },
+    {
+      "idx": 342,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0016/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "clean"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 23.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7598.0
+    },
+    {
+      "idx": 343,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0017/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5579.0
+    },
+    {
+      "idx": 344,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0018/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5665.0
+    },
+    {
+      "idx": 345,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0020/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5243.0
+    },
+    {
+      "idx": 346,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0021/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5601.0
+    },
+    {
+      "idx": 347,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0022/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 12.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5759.0
+    },
+    {
+      "idx": 348,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0023/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 11.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5792.0
+    },
+    {
+      "idx": 349,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0024/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 9.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4929.0
+    },
+    {
+      "idx": 350,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0026/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "over_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 9.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5713.0
+    },
+    {
+      "idx": 351,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0027/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "over_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 9.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5946.0
+    },
+    {
+      "idx": 352,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0028/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "over_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 15.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7093.0
+    },
+    {
+      "idx": 353,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0029/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 18.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5380.0
+    },
+    {
+      "idx": 354,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0031/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 24.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4875.0
+    },
+    {
+      "idx": 355,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0032/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 23.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7485.0
+    },
+    {
+      "idx": 356,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0034/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 9.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5501.0
+    },
+    {
+      "idx": 357,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0035/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 25.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5051.0
+    },
+    {
+      "idx": 358,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0036/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7329.0
+    },
+    {
+      "idx": 359,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0040/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "wrong_vat_rate:lines[].vat_rate"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5983.0
+    },
+    {
+      "idx": 360,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0041/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "wrong_vat_rate:lines[].vat_rate"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 25.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5838.0
+    },
+    {
+      "idx": 361,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0042/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6670.0
+    },
+    {
+      "idx": 362,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0043/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 18.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6835.0
+    },
+    {
+      "idx": 363,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0044/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "missing_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 25.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6411.0
+    },
+    {
+      "idx": 364,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0047/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "extra_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4904.0
+    },
+    {
+      "idx": 365,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0048/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "extra_line"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5513.0
+    },
+    {
+      "idx": 366,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0049/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "duplicate_invoice"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6023.0
+    },
+    {
+      "idx": 367,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0050/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "duplicate_invoice"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6176.0
+    },
+    {
+      "idx": 368,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0052/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "duplicate_invoice"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6358.0
+    },
+    {
+      "idx": 369,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0054/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "arithmetic_error:lines[].line_net_amount"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5678.0
+    },
+    {
+      "idx": 370,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0056/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "arithmetic_error:lines[].line_net_amount"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 19.6,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6859.0
+    },
+    {
+      "idx": 371,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0057/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:lines[].serial_numbers"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 12.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5711.0
+    },
+    {
+      "idx": 372,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0058/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:buyer_reference"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7028.0
+    },
+    {
+      "idx": 373,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0059/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:lines[].serial_numbers"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6864.0
+    },
+    {
+      "idx": 374,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0060/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:lines[].serial_numbers"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.4,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5135.0
+    },
+    {
+      "idx": 375,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0063/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "missing_mandatory_field:lines[].serial_numbers"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.8,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5193.0
+    },
+    {
+      "idx": 376,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0066/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5530.0
+    },
+    {
+      "idx": 377,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0067/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.7,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5170.0
+    },
+    {
+      "idx": 378,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0068/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 9.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5104.0
+    },
+    {
+      "idx": 379,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0069/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "changed_iban:payment.iban"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 29.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 6152.0
+    },
+    {
+      "idx": 380,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0070/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "unit_mismatch:lines[].unit_code"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 7316.0
+    },
+    {
+      "idx": 381,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0071/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "unit_mismatch:lines[].unit_code"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.3,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5186.0
+    },
+    {
+      "idx": 382,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0072/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "unit_mismatch:lines[].unit_code"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6873.0
+    },
+    {
+      "idx": 383,
+      "subset": "generated:zugferd",
+      "path": "generated/technikhaus/technikhaus-0075/invoice.pdf",
+      "expected_valid": true,
+      "labels": [
+        "rounding"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 6.1,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "accept",
+      "mustang_combined": "accept",
+      "mustang_ms": 6645.0
+    },
+    {
+      "idx": 384,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0076/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "rounding"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 7.2,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5721.0
+    },
+    {
+      "idx": 385,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0077/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "rounding"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.9,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4840.0
+    },
+    {
+      "idx": 386,
+      "subset": "generated:xrechnung_cii",
+      "path": "generated/technikhaus/technikhaus-0079/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "no_goods_receipt"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 18.0,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 5140.0
+    },
+    {
+      "idx": 387,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0080/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "no_goods_receipt"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 5.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4304.0
+    },
+    {
+      "idx": 388,
+      "subset": "generated:xrechnung_ubl",
+      "path": "generated/technikhaus/technikhaus-0081/invoice.xml",
+      "expected_valid": true,
+      "labels": [
+        "price_deviation",
+        "short_delivery"
+      ],
+      "kosit": "accept",
+      "kosit_ms": 17.5,
+      "mustang": "accept",
+      "mustang_xml": "accept",
+      "mustang_pdf": "n/a",
+      "mustang_combined": "accept",
+      "mustang_ms": 4279.0
+    }
+  ]
+}

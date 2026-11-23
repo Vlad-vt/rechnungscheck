@@ -5,16 +5,21 @@ A tenant is data, not code. Adding one means adding a directory.
 ```
 tenants/<tenant_id>/
   config.yaml      validated by rechnungscheck.tenancy.TenantConfig
-  master_data/     suppliers, products, price agreements (Phase 2)
-  contracts/       synthetic supplier contracts for the knowledge base (Phase 2)
-  evals/           tenant eval set and thresholds (Phase 4)
+  datagen.yaml     demo tenants only: seed for the synthetic generator (buyer, suppliers, products)
+  master_data/     suppliers, products, unit conversions, price agreements, invoice history (JSON)
+  contracts/       supplier framework contracts (Markdown) for the knowledge base
+  evals/           cases.jsonl (labelled cases), dataset.json, documents.sha256; thresholds in Phase 4
 ```
 
-## Steps (current state: Phase 1)
+## Steps (current state: Phase 2)
 
 1. Copy an existing tenant directory and rename it. The directory name **is** the tenant id: lowercase, 3 to 32 characters, `[a-z][a-z0-9-]*`.
 2. Edit `config.yaml`. Print the full schema with `uv run rechnungscheck tenants schema`.
 3. Run `uv run rechnungscheck tenants validate` (CI runs the same command).
+4. Demo tenant: write `datagen.yaml` (schema: `datagen.catalog.TenantSeed`; exactly one supplier is
+   `shared: true`, the cross-tenant probe supplier), then `make data`. This writes `master_data/`,
+   `contracts/` and `evals/` and renders the documents into `data/generated/<tenant_id>/`.
+   A real tenant instead supplies `master_data/` and `contracts/` directly.
 
 ## What the schema enforces
 

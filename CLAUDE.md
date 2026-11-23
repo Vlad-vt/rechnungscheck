@@ -29,7 +29,14 @@ src/rechnungscheck/
   config/         Settings (pydantic-settings, env prefix RC_)
   extraction/ compliance/ matching/ policy/ agents/ graph/ tools/ retrieval/ api/ observability/
   cli.py          `rechnungscheck` Typer CLI
-tenants/<id>/     config.yaml, master_data/, contracts/, evals/   (a new tenant = a new directory, no code)
+  extraction/     format router, hardened XML parsing, structured CII/UBL/ZUGFeRD parsers
+  compliance/     KoSIT validator client (more rules in Phase 3)
+tenants/<id>/     config.yaml, datagen.yaml (demo seed), master_data/, contracts/, evals/
+                  (a new tenant = a new directory, no code)
+datagen/          synthetic data generator + independent decision oracle (labels.py)
+validator/        KoSIT (service) and Mustang (one-shot) Dockerfiles, SHA-256-pinned downloads
+evals/runners/    eval and comparison runners; results in evals/results/ (JSON + Markdown)
+data/             NOT committed: generated documents, ZUGFeRD corpus, validator run artefacts
 tests/unit|integration|security/
 infra/bicep/      main.bicep, modules/, envs/  (preflight/ = Phase 0 probes, never deployed)
 docs/             PREFLIGHT.md, adr/, and the other docs listed in the brief
@@ -44,6 +51,10 @@ scripts/          one-off operational scripts (PEP 723 inline deps, run with `uv
 make install            uv sync --locked + pre-commit hooks
 make check              everything CI runs (lint, mypy, tests, tenants, bicep, checkov, gitleaks, pip-audit)
 make test               unit tests only (markers: integration = needs Docker Compose, cloud = needs Azure)
+make up / make down     local stack: Postgres (pgvector), Azurite, KoSIT validator on 127.0.0.1:8081
+make data               regenerate data/generated + committed manifests; `make data-verify` checks SHA-256
+make test-integration   tests against the local stack
+make corpus && make compare-validators   ADR 0003 measurement (Mustang run takes ~10 min)
 uv run rechnungscheck tenants validate
 uv run rechnungscheck tenants schema
 ```
@@ -56,6 +67,10 @@ uv run rechnungscheck tenants schema
 - Money and quantities are `Decimal` (`domain.types.Amount` / `Quantity`). YAML numbers are converted via their string form, so `0.02` stays exact; a test guards this.
 - Each canonical invoice field carries its EN 16931 business term id in `json_schema_extra={"bt": ...}`; extensions use `"EXT"`.
 - Prefer small, explainable designs. Every significant decision gets an ADR in `docs/adr/NNNN-title.md` with alternatives and the measurement behind it.
+- The generator's oracle (`datagen/labels.py`) must never import product decision code (`policy/`): evals compare the product against an independent implementation.
+- Committed dataset files must equal generator output; CI regenerates and runs `git diff --exit-code`. Change the generator, then run `make data` and commit both.
+- Refactors of the generator are proven by a full SHA-256 comparison of `tenants/` and `data/generated/` before and after.
+- Every eval/comparison result records the git commit and whether the tree was dirty at the START of the run.
 - Verify library APIs against current docs or installed source before using them; the LangChain/LangGraph/Foundry ecosystem changes fast. Do not trust memory for model names, API versions or SDK signatures.
 
 ## Git
@@ -65,8 +80,8 @@ uv run rechnungscheck tenants schema
 
 ## CI coverage (ci.yml)
 
-Runs on every PR without cloud access: ruff, mypy, unit tests, tenant validation, Bicep lint, checkov, gitleaks, pip-audit.
-To be added when the artefacts exist: Docker build (Phase 2), offline eval smoke run against recorded model responses (Phase 4).
+Runs on every PR without cloud access: ruff, mypy, unit tests, tenant validation, dataset-vs-generator diff, Bicep lint, checkov, gitleaks, pip-audit, validator image builds, Docker Compose integration tests.
+To be added: app image build (Phase 3), offline eval smoke run against recorded model responses (Phase 4).
 
 ## Azure facts (from docs/PREFLIGHT.md)
 
