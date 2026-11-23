@@ -45,13 +45,11 @@ jobs:
         run: uv run pytest -m "not integration and not cloud"
       - name: Validate tenant configs
         run: uv run rechnungscheck tenants validate
-      - name: Committed dataset matches the generator
+      - name: Committed dataset matches the generator (manifests and document SHA-256)
         run: |
           uv run python -m datagen generate
-          git diff --exit-code --stat -- tenants ':!tenants/*/evals/documents.sha256'
-      - name: Rendered documents vs committed SHA-256 (informational, renderers may differ across OSes)
-        continue-on-error: true
-        run: uv run python -m datagen verify
+          git diff --exit-code --stat -- tenants
+          uv run python -m datagen verify
 
   containers:
     name: validator images, local stack integration tests

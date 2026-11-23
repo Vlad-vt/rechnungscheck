@@ -47,5 +47,5 @@ Everything later in the project is measured against generated data: extraction a
   - duplicates exist in the invoice history;
   - changed IBANs differ from master data;
   - the split is balanced per scenario.
-- Byte-level reproducibility across operating systems is not guaranteed (zlib and PNG encoders differ). CI checks that the committed manifests match the generator and reports document hashes for information only.
+- Cross-platform reproducibility was measured: in CI run 45143922275 (Linux, commit f1f52bc) all 483 documents matched the SHA-256 list produced on Windows. CI now fails if any committed manifest or document hash differs from the generator output. A future library upgrade that changes bytes shows up as a CI failure and needs `make data` plus a commit.
 - The scenario name is the generator recipe. The labels are the truth. For example, a "within tolerance" recipe for a zero-tolerance tenant yields an out-of-tolerance label.

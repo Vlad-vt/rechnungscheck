@@ -68,7 +68,7 @@ uv run rechnungscheck tenants schema
 - Each canonical invoice field carries its EN 16931 business term id in `json_schema_extra={"bt": ...}`; extensions use `"EXT"`.
 - Prefer small, explainable designs. Every significant decision gets an ADR in `docs/adr/NNNN-title.md` with alternatives and the measurement behind it.
 - The generator's oracle (`datagen/labels.py`) must never import product decision code (`policy/`): evals compare the product against an independent implementation.
-- Committed dataset files must equal generator output; CI regenerates and runs `git diff --exit-code`. Change the generator, then run `make data` and commit both.
+- Committed dataset files and document SHA-256 must equal generator output (byte-identical on Windows and Linux, measured); CI regenerates and fails on any diff. Change the generator, then run `make data` and commit both.
 - Refactors of the generator are proven by a full SHA-256 comparison of `tenants/` and `data/generated/` before and after.
 - Every eval/comparison result records the git commit and whether the tree was dirty at the START of the run.
 - Verify library APIs against current docs or installed source before using them; the LangChain/LangGraph/Foundry ecosystem changes fast. Do not trust memory for model names, API versions or SDK signatures.
